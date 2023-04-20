@@ -1,0 +1,191 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Projecte_Gasolinera
+</name>
+</assembly>
+<members>
+<member name="T:Projecte_Gasolinera.carburantDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSet.comandaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSet.dipositDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSet.empresa_recaregaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSet.login_adminDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSet.login_clientDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSet.vendaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSet.comandaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSet.dipositRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSet.empresa_recaregaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSet.login_adminRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSet.login_clientRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSet.vendaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSet.comandaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSet.dipositRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSet.empresa_recaregaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSet.login_adminRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSet.login_clientRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSet.vendaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSetTableAdapters.comandaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSetTableAdapters.dipositTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSetTableAdapters.empresa_recaregaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSetTableAdapters.login_adminTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSetTableAdapters.login_clientTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSetTableAdapters.vendaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Projecte_Gasolinera.carburantDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Projecte_Gasolinera.carburantDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Projecte_Gasolinera.carburantDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Projecte_Gasolinera.carburantDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Projecte_Gasolinera.carburantDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Projecte_Gasolinera.carburantDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Projecte_Gasolinera.carburantDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Projecte_Gasolinera.carburantDataSetTableAdapters.TableAdapterManager.UpdateAll(Projecte_Gasolinera.carburantDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.carburantDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Projecte_Gasolinera.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Projecte_Gasolinera.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Projecte_Gasolinera.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+</members>
+</doc>

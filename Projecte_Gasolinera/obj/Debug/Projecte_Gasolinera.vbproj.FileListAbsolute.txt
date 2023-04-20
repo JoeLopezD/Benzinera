@@ -1,0 +1,15 @@
+c:\users\anomalia\documents\visual studio 2015\Projects\Projecte_Gasolinera\Projecte_Gasolinera\bin\Debug\Projecte_Gasolinera.exe.config
+C:\Users\Anomalia\documents\visual studio 2015\Projects\Projecte_Gasolinera\Projecte_Gasolinera\bin\Debug\Projecte_Gasolinera.exe
+C:\Users\Anomalia\documents\visual studio 2015\Projects\Projecte_Gasolinera\Projecte_Gasolinera\bin\Debug\Projecte_Gasolinera.pdb
+C:\Users\Anomalia\documents\visual studio 2015\Projects\Projecte_Gasolinera\Projecte_Gasolinera\bin\Debug\Projecte_Gasolinera.xml
+C:\Users\Anomalia\documents\visual studio 2015\Projects\Projecte_Gasolinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.vbprojResolveAssemblyReference.cache
+C:\Users\Anomalia\documents\visual studio 2015\Projects\Projecte_Gasolinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Form1.resources
+C:\Users\Anomalia\documents\visual studio 2015\Projects\Projecte_Gasolinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Login.resources
+C:\Users\Anomalia\documents\visual studio 2015\Projects\Projecte_Gasolinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Resources.resources
+C:\Users\Anomalia\documents\visual studio 2015\Projects\Projecte_Gasolinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Registre_admin.resources
+C:\Users\Anomalia\documents\visual studio 2015\Projects\Projecte_Gasolinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.vbproj.GenerateResource.Cache
+C:\Users\Anomalia\documents\visual studio 2015\Projects\Projecte_Gasolinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.exe
+C:\Users\Anomalia\documents\visual studio 2015\Projects\Projecte_Gasolinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.xml
+C:\Users\Anomalia\documents\visual studio 2015\Projects\Projecte_Gasolinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.pdb
+C:\Users\Anomalia\documents\visual studio 2015\Projects\Projecte_Gasolinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Form2.resources
+C:\Users\Anomalia\documents\visual studio 2015\Projects\Projecte_Gasolinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Gasolinera.resources
