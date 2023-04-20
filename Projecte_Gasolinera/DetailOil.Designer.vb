@@ -270,9 +270,9 @@ Partial Class DetailOil
         '
         'MyVerticalProgessBar1
         '
-        Me.MyVerticalProgessBar1.Location = New System.Drawing.Point(363, 245)
+        Me.MyVerticalProgessBar1.Location = New System.Drawing.Point(363, 211)
         Me.MyVerticalProgessBar1.Name = "MyVerticalProgessBar1"
-        Me.MyVerticalProgessBar1.Size = New System.Drawing.Size(33, 305)
+        Me.MyVerticalProgessBar1.Size = New System.Drawing.Size(33, 364)
         Me.MyVerticalProgessBar1.TabIndex = 50
         '
         'DetailOil

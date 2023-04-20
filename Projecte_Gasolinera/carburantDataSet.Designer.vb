@@ -807,13 +807,13 @@ Partial Public Class carburantDataSet
         
         Private columndiposit_id As Global.System.Data.DataColumn
         
+        Private columnnom_carburant As Global.System.Data.DataColumn
+        
         Private columnactual As Global.System.Data.DataColumn
         
         Private columnmaxim As Global.System.Data.DataColumn
         
-        Private columnmoneda As Global.System.Data.DataColumn
-        
-        Private columncarbu_id As Global.System.Data.DataColumn
+        Private columneuros As Global.System.Data.DataColumn
         
         Private columnempresa_id As Global.System.Data.DataColumn
         
@@ -862,6 +862,14 @@ Partial Public Class carburantDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property nom_carburantColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnnom_carburant
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public ReadOnly Property actualColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnactual
@@ -878,17 +886,9 @@ Partial Public Class carburantDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property monedaColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property eurosColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnmoneda
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property carbu_idColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columncarbu_id
+                Return Me.columneuros
             End Get
         End Property
         
@@ -937,9 +937,9 @@ Partial Public Class carburantDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AdddipositRow(ByVal actual As Double, ByVal maxim As Double, ByVal moneda As Double, ByVal carbu_id As Integer, ByVal parentempresa_recaregaRowByFK__diposit__empresa__164452B1 As empresa_recaregaRow) As dipositRow
+        Public Overloads Function AdddipositRow(ByVal nom_carburant As String, ByVal actual As Double, ByVal maxim As Double, ByVal euros As Double, ByVal parentempresa_recaregaRowByFK__diposit__empresa__164452B1 As empresa_recaregaRow) As dipositRow
             Dim rowdipositRow As dipositRow = CType(Me.NewRow,dipositRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, actual, maxim, moneda, carbu_id, Nothing}
+            Dim columnValuesArray() As Object = New Object() {Nothing, nom_carburant, actual, maxim, euros, Nothing}
             If (Not (parentempresa_recaregaRowByFK__diposit__empresa__164452B1) Is Nothing) Then
                 columnValuesArray(5) = parentempresa_recaregaRowByFK__diposit__empresa__164452B1(0)
             End If
@@ -972,10 +972,10 @@ Partial Public Class carburantDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Friend Sub InitVars()
             Me.columndiposit_id = MyBase.Columns("diposit_id")
+            Me.columnnom_carburant = MyBase.Columns("nom_carburant")
             Me.columnactual = MyBase.Columns("actual")
             Me.columnmaxim = MyBase.Columns("maxim")
-            Me.columnmoneda = MyBase.Columns("moneda")
-            Me.columncarbu_id = MyBase.Columns("carbu_id")
+            Me.columneuros = MyBase.Columns("euros")
             Me.columnempresa_id = MyBase.Columns("empresa_id")
         End Sub
         
@@ -984,14 +984,14 @@ Partial Public Class carburantDataSet
         Private Sub InitClass()
             Me.columndiposit_id = New Global.System.Data.DataColumn("diposit_id", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columndiposit_id)
+            Me.columnnom_carburant = New Global.System.Data.DataColumn("nom_carburant", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnnom_carburant)
             Me.columnactual = New Global.System.Data.DataColumn("actual", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnactual)
             Me.columnmaxim = New Global.System.Data.DataColumn("maxim", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnmaxim)
-            Me.columnmoneda = New Global.System.Data.DataColumn("moneda", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnmoneda)
-            Me.columncarbu_id = New Global.System.Data.DataColumn("carbu_id", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columncarbu_id)
+            Me.columneuros = New Global.System.Data.DataColumn("euros", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columneuros)
             Me.columnempresa_id = New Global.System.Data.DataColumn("empresa_id", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnempresa_id)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columndiposit_id}, true))
@@ -1001,6 +1001,7 @@ Partial Public Class carburantDataSet
             Me.columndiposit_id.AllowDBNull = false
             Me.columndiposit_id.ReadOnly = true
             Me.columndiposit_id.Unique = true
+            Me.columnnom_carburant.MaxLength = 20
             Me.columnempresa_id.AllowDBNull = false
         End Sub
         
@@ -2155,7 +2156,7 @@ Partial Public Class carburantDataSet
         
         Private columncapacitat As Global.System.Data.DataColumn
         
-        Private columndiners As Global.System.Data.DataColumn
+        Private columneuros As Global.System.Data.DataColumn
         
         Private columnpagat As Global.System.Data.DataColumn
         
@@ -2230,9 +2231,9 @@ Partial Public Class carburantDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property dinersColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property eurosColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columndiners
+                Return Me.columneuros
             End Get
         End Property
         
@@ -2289,9 +2290,9 @@ Partial Public Class carburantDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddvendaRow(ByVal parentdipositRowByFK__venda__diposit_i__1920BF5C As dipositRow, ByVal targeta As String, ByVal capacitat As Double, ByVal diners As Double, ByVal pagat As Boolean, ByVal data_venda As Date) As vendaRow
+        Public Overloads Function AddvendaRow(ByVal parentdipositRowByFK__venda__diposit_i__1920BF5C As dipositRow, ByVal targeta As String, ByVal capacitat As Double, ByVal euros As Double, ByVal pagat As Boolean, ByVal data_venda As Date) As vendaRow
             Dim rowvendaRow As vendaRow = CType(Me.NewRow,vendaRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, Nothing, targeta, capacitat, diners, pagat, data_venda}
+            Dim columnValuesArray() As Object = New Object() {Nothing, Nothing, targeta, capacitat, euros, pagat, data_venda}
             If (Not (parentdipositRowByFK__venda__diposit_i__1920BF5C) Is Nothing) Then
                 columnValuesArray(1) = parentdipositRowByFK__venda__diposit_i__1920BF5C(0)
             End If
@@ -2327,7 +2328,7 @@ Partial Public Class carburantDataSet
             Me.columndiposit_id = MyBase.Columns("diposit_id")
             Me.columntargeta = MyBase.Columns("targeta")
             Me.columncapacitat = MyBase.Columns("capacitat")
-            Me.columndiners = MyBase.Columns("diners")
+            Me.columneuros = MyBase.Columns("euros")
             Me.columnpagat = MyBase.Columns("pagat")
             Me.columndata_venda = MyBase.Columns("data_venda")
         End Sub
@@ -2343,8 +2344,8 @@ Partial Public Class carburantDataSet
             MyBase.Columns.Add(Me.columntargeta)
             Me.columncapacitat = New Global.System.Data.DataColumn("capacitat", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columncapacitat)
-            Me.columndiners = New Global.System.Data.DataColumn("diners", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columndiners)
+            Me.columneuros = New Global.System.Data.DataColumn("euros", GetType(Double), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columneuros)
             Me.columnpagat = New Global.System.Data.DataColumn("pagat", GetType(Boolean), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnpagat)
             Me.columndata_venda = New Global.System.Data.DataColumn("data_venda", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
@@ -2609,6 +2610,21 @@ Partial Public Class carburantDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property nom_carburant() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tablediposit.nom_carburantColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'nom_carburant' de la tabla 'diposit' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tablediposit.nom_carburantColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Property actual() As Double
             Get
                 Try 
@@ -2639,31 +2655,16 @@ Partial Public Class carburantDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property moneda() As Double
+        Public Property euros() As Double
             Get
                 Try 
-                    Return CType(Me(Me.tablediposit.monedaColumn),Double)
+                    Return CType(Me(Me.tablediposit.eurosColumn),Double)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'moneda' de la tabla 'diposit' es DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'euros' de la tabla 'diposit' es DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tablediposit.monedaColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property carbu_id() As Integer
-            Get
-                Try 
-                    Return CType(Me(Me.tablediposit.carbu_idColumn),Integer)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'carbu_id' de la tabla 'diposit' es DBNull.", e)
-                End Try
-            End Get
-            Set
-                Me(Me.tablediposit.carbu_idColumn) = value
+                Me(Me.tablediposit.eurosColumn) = value
             End Set
         End Property
         
@@ -2691,6 +2692,18 @@ Partial Public Class carburantDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function Isnom_carburantNull() As Boolean
+            Return Me.IsNull(Me.tablediposit.nom_carburantColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub Setnom_carburantNull()
+            Me(Me.tablediposit.nom_carburantColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Function IsactualNull() As Boolean
             Return Me.IsNull(Me.tablediposit.actualColumn)
         End Function
@@ -2715,26 +2728,14 @@ Partial Public Class carburantDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsmonedaNull() As Boolean
-            Return Me.IsNull(Me.tablediposit.monedaColumn)
+        Public Function IseurosNull() As Boolean
+            Return Me.IsNull(Me.tablediposit.eurosColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetmonedaNull()
-            Me(Me.tablediposit.monedaColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function Iscarbu_idNull() As Boolean
-            Return Me.IsNull(Me.tablediposit.carbu_idColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub Setcarbu_idNull()
-            Me(Me.tablediposit.carbu_idColumn) = Global.System.Convert.DBNull
+        Public Sub SeteurosNull()
+            Me(Me.tablediposit.eurosColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -3269,16 +3270,16 @@ Partial Public Class carburantDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property diners() As Double
+        Public Property euros() As Double
             Get
                 Try 
-                    Return CType(Me(Me.tablevenda.dinersColumn),Double)
+                    Return CType(Me(Me.tablevenda.eurosColumn),Double)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'diners' de la tabla 'venda' es DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'euros' de la tabla 'venda' es DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tablevenda.dinersColumn) = value
+                Me(Me.tablevenda.eurosColumn) = value
             End Set
         End Property
         
@@ -3345,14 +3346,14 @@ Partial Public Class carburantDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsdinersNull() As Boolean
-            Return Me.IsNull(Me.tablevenda.dinersColumn)
+        Public Function IseurosNull() As Boolean
+            Return Me.IsNull(Me.tablevenda.eurosColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetdinersNull()
-            Me(Me.tablevenda.dinersColumn) = Global.System.Convert.DBNull
+        Public Sub SeteurosNull()
+            Me(Me.tablevenda.eurosColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -4048,69 +4049,69 @@ Namespace carburantDataSetTableAdapters
             tableMapping.SourceTable = "Table"
             tableMapping.DataSetTable = "diposit"
             tableMapping.ColumnMappings.Add("diposit_id", "diposit_id")
+            tableMapping.ColumnMappings.Add("nom_carburant", "nom_carburant")
             tableMapping.ColumnMappings.Add("actual", "actual")
             tableMapping.ColumnMappings.Add("maxim", "maxim")
-            tableMapping.ColumnMappings.Add("moneda", "moneda")
-            tableMapping.ColumnMappings.Add("carbu_id", "carbu_id")
+            tableMapping.ColumnMappings.Add("euros", "euros")
             tableMapping.ColumnMappings.Add("empresa_id", "empresa_id")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
             Me._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[diposit] WHERE (([diposit_id] = @Original_diposit_id) AND ((@I"& _ 
-                "sNull_actual = 1 AND [actual] IS NULL) OR ([actual] = @Original_actual)) AND ((@"& _ 
-                "IsNull_maxim = 1 AND [maxim] IS NULL) OR ([maxim] = @Original_maxim)) AND ((@IsN"& _ 
-                "ull_moneda = 1 AND [moneda] IS NULL) OR ([moneda] = @Original_moneda)) AND ((@Is"& _ 
-                "Null_carbu_id = 1 AND [carbu_id] IS NULL) OR ([carbu_id] = @Original_carbu_id)) "& _ 
-                "AND ([empresa_id] = @Original_empresa_id))"
+                "sNull_nom_carburant = 1 AND [nom_carburant] IS NULL) OR ([nom_carburant] = @Orig"& _ 
+                "inal_nom_carburant)) AND ((@IsNull_actual = 1 AND [actual] IS NULL) OR ([actual]"& _ 
+                " = @Original_actual)) AND ((@IsNull_maxim = 1 AND [maxim] IS NULL) OR ([maxim] ="& _ 
+                " @Original_maxim)) AND ((@IsNull_euros = 1 AND [euros] IS NULL) OR ([euros] = @O"& _ 
+                "riginal_euros)) AND ([empresa_id] = @Original_empresa_id))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_diposit_id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "diposit_id", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_nom_carburant", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nom_carburant", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_nom_carburant", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nom_carburant", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_actual", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "actual", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_actual", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "actual", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_maxim", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "maxim", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_maxim", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "maxim", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_moneda", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "moneda", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_moneda", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "moneda", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_carbu_id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "carbu_id", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_carbu_id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "carbu_id", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_euros", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "euros", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_euros", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "euros", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_empresa_id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "empresa_id", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[diposit] ([actual], [maxim], [moneda], [carbu_id], [empresa_id"& _ 
-                "]) VALUES (@actual, @maxim, @moneda, @carbu_id, @empresa_id);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT diposit_id"& _ 
-                ", actual, maxim, moneda, carbu_id, empresa_id FROM diposit WHERE (diposit_id = S"& _ 
-                "COPE_IDENTITY())"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[diposit] ([nom_carburant], [actual], [maxim], [euros], [empres"& _ 
+                "a_id]) VALUES (@nom_carburant, @actual, @maxim, @euros, @empresa_id);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT di"& _ 
+                "posit_id, nom_carburant, actual, maxim, euros, empresa_id FROM diposit WHERE (di"& _ 
+                "posit_id = SCOPE_IDENTITY())"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@nom_carburant", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nom_carburant", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@actual", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "actual", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@maxim", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "maxim", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@moneda", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "moneda", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@carbu_id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "carbu_id", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@euros", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "euros", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@empresa_id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "empresa_id", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[diposit] SET [actual] = @actual, [maxim] = @maxim, [moneda] = @mone"& _ 
-                "da, [carbu_id] = @carbu_id, [empresa_id] = @empresa_id WHERE (([diposit_id] = @O"& _ 
-                "riginal_diposit_id) AND ((@IsNull_actual = 1 AND [actual] IS NULL) OR ([actual] "& _ 
-                "= @Original_actual)) AND ((@IsNull_maxim = 1 AND [maxim] IS NULL) OR ([maxim] = "& _ 
-                "@Original_maxim)) AND ((@IsNull_moneda = 1 AND [moneda] IS NULL) OR ([moneda] = "& _ 
-                "@Original_moneda)) AND ((@IsNull_carbu_id = 1 AND [carbu_id] IS NULL) OR ([carbu"& _ 
-                "_id] = @Original_carbu_id)) AND ([empresa_id] = @Original_empresa_id));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT "& _ 
-                "diposit_id, actual, maxim, moneda, carbu_id, empresa_id FROM diposit WHERE (dipo"& _ 
-                "sit_id = @diposit_id)"
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[diposit] SET [nom_carburant] = @nom_carburant, [actual] = @actual, "& _ 
+                "[maxim] = @maxim, [euros] = @euros, [empresa_id] = @empresa_id WHERE (([diposit_"& _ 
+                "id] = @Original_diposit_id) AND ((@IsNull_nom_carburant = 1 AND [nom_carburant] "& _ 
+                "IS NULL) OR ([nom_carburant] = @Original_nom_carburant)) AND ((@IsNull_actual = "& _ 
+                "1 AND [actual] IS NULL) OR ([actual] = @Original_actual)) AND ((@IsNull_maxim = "& _ 
+                "1 AND [maxim] IS NULL) OR ([maxim] = @Original_maxim)) AND ((@IsNull_euros = 1 A"& _ 
+                "ND [euros] IS NULL) OR ([euros] = @Original_euros)) AND ([empresa_id] = @Origina"& _ 
+                "l_empresa_id));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT diposit_id, nom_carburant, actual, maxim, euros, empresa"& _ 
+                "_id FROM diposit WHERE (diposit_id = @diposit_id)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@nom_carburant", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nom_carburant", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@actual", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "actual", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@maxim", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "maxim", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@moneda", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "moneda", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@carbu_id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "carbu_id", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@euros", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "euros", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@empresa_id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "empresa_id", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_diposit_id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "diposit_id", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_nom_carburant", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nom_carburant", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_nom_carburant", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "nom_carburant", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_actual", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "actual", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_actual", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "actual", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_maxim", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "maxim", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_maxim", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "maxim", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_moneda", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "moneda", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_moneda", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "moneda", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_carbu_id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "carbu_id", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_carbu_id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "carbu_id", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_euros", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "euros", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_euros", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "euros", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_empresa_id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "empresa_id", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@diposit_id", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "diposit_id", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
         End Sub
@@ -4128,7 +4129,8 @@ Namespace carburantDataSetTableAdapters
             Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT diposit_id, actual, maxim, moneda, carbu_id, empresa_id FROM dbo.diposit"
+            Me._commandCollection(0).CommandText = "SELECT diposit_id, nom_carburant, actual, maxim, euros, empresa_id FROM dbo.dipos"& _ 
+                "it"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -4188,32 +4190,32 @@ Namespace carburantDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_diposit_id As Integer, ByVal Original_actual As Global.System.Nullable(Of Double), ByVal Original_maxim As Global.System.Nullable(Of Double), ByVal Original_moneda As Global.System.Nullable(Of Double), ByVal Original_carbu_id As Global.System.Nullable(Of Integer), ByVal Original_empresa_id As Integer) As Integer
+        Public Overloads Overridable Function Delete(ByVal Original_diposit_id As Integer, ByVal Original_nom_carburant As String, ByVal Original_actual As Global.System.Nullable(Of Double), ByVal Original_maxim As Global.System.Nullable(Of Double), ByVal Original_euros As Global.System.Nullable(Of Double), ByVal Original_empresa_id As Integer) As Integer
             Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_diposit_id,Integer)
-            If (Original_actual.HasValue = true) Then
-                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_actual.Value,Double)
-            Else
+            If (Original_nom_carburant Is Nothing) Then
                 Me.Adapter.DeleteCommand.Parameters(1).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(2).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_nom_carburant,String)
             End If
-            If (Original_maxim.HasValue = true) Then
+            If (Original_actual.HasValue = true) Then
                 Me.Adapter.DeleteCommand.Parameters(3).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(Original_maxim.Value,Double)
+                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(Original_actual.Value,Double)
             Else
                 Me.Adapter.DeleteCommand.Parameters(3).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(4).Value = Global.System.DBNull.Value
             End If
-            If (Original_moneda.HasValue = true) Then
+            If (Original_maxim.HasValue = true) Then
                 Me.Adapter.DeleteCommand.Parameters(5).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(6).Value = CType(Original_moneda.Value,Double)
+                Me.Adapter.DeleteCommand.Parameters(6).Value = CType(Original_maxim.Value,Double)
             Else
                 Me.Adapter.DeleteCommand.Parameters(5).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(6).Value = Global.System.DBNull.Value
             End If
-            If (Original_carbu_id.HasValue = true) Then
+            If (Original_euros.HasValue = true) Then
                 Me.Adapter.DeleteCommand.Parameters(7).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(8).Value = CType(Original_carbu_id.Value,Integer)
+                Me.Adapter.DeleteCommand.Parameters(8).Value = CType(Original_euros.Value,Double)
             Else
                 Me.Adapter.DeleteCommand.Parameters(7).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(8).Value = Global.System.DBNull.Value
@@ -4238,24 +4240,24 @@ Namespace carburantDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal actual As Global.System.Nullable(Of Double), ByVal maxim As Global.System.Nullable(Of Double), ByVal moneda As Global.System.Nullable(Of Double), ByVal carbu_id As Global.System.Nullable(Of Integer), ByVal empresa_id As Integer) As Integer
-            If (actual.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(0).Value = CType(actual.Value,Double)
-            Else
+        Public Overloads Overridable Function Insert(ByVal nom_carburant As String, ByVal actual As Global.System.Nullable(Of Double), ByVal maxim As Global.System.Nullable(Of Double), ByVal euros As Global.System.Nullable(Of Double), ByVal empresa_id As Integer) As Integer
+            If (nom_carburant Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(nom_carburant,String)
             End If
-            If (maxim.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(1).Value = CType(maxim.Value,Double)
+            If (actual.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(1).Value = CType(actual.Value,Double)
             Else
                 Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
             End If
-            If (moneda.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(2).Value = CType(moneda.Value,Double)
+            If (maxim.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(2).Value = CType(maxim.Value,Double)
             Else
                 Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
             End If
-            If (carbu_id.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(3).Value = CType(carbu_id.Value,Integer)
+            If (euros.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(3).Value = CType(euros.Value,Double)
             Else
                 Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
             End If
@@ -4279,53 +4281,53 @@ Namespace carburantDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal actual As Global.System.Nullable(Of Double), ByVal maxim As Global.System.Nullable(Of Double), ByVal moneda As Global.System.Nullable(Of Double), ByVal carbu_id As Global.System.Nullable(Of Integer), ByVal empresa_id As Integer, ByVal Original_diposit_id As Integer, ByVal Original_actual As Global.System.Nullable(Of Double), ByVal Original_maxim As Global.System.Nullable(Of Double), ByVal Original_moneda As Global.System.Nullable(Of Double), ByVal Original_carbu_id As Global.System.Nullable(Of Integer), ByVal Original_empresa_id As Integer, ByVal diposit_id As Integer) As Integer
-            If (actual.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(actual.Value,Double)
-            Else
+        Public Overloads Overridable Function Update(ByVal nom_carburant As String, ByVal actual As Global.System.Nullable(Of Double), ByVal maxim As Global.System.Nullable(Of Double), ByVal euros As Global.System.Nullable(Of Double), ByVal empresa_id As Integer, ByVal Original_diposit_id As Integer, ByVal Original_nom_carburant As String, ByVal Original_actual As Global.System.Nullable(Of Double), ByVal Original_maxim As Global.System.Nullable(Of Double), ByVal Original_euros As Global.System.Nullable(Of Double), ByVal Original_empresa_id As Integer, ByVal diposit_id As Integer) As Integer
+            If (nom_carburant Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(0).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(nom_carburant,String)
             End If
-            If (maxim.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(maxim.Value,Double)
+            If (actual.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(actual.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(1).Value = Global.System.DBNull.Value
             End If
-            If (moneda.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(moneda.Value,Double)
+            If (maxim.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(maxim.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
             End If
-            If (carbu_id.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(carbu_id.Value,Integer)
+            If (euros.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(euros.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(3).Value = Global.System.DBNull.Value
             End If
             Me.Adapter.UpdateCommand.Parameters(4).Value = CType(empresa_id,Integer)
             Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Original_diposit_id,Integer)
-            If (Original_actual.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Original_actual.Value,Double)
-            Else
+            If (Original_nom_carburant Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(6).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(7).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Original_nom_carburant,String)
             End If
-            If (Original_maxim.HasValue = true) Then
+            If (Original_actual.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(8).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(Original_maxim.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(Original_actual.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(8).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(9).Value = Global.System.DBNull.Value
             End If
-            If (Original_moneda.HasValue = true) Then
+            If (Original_maxim.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(10).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Original_moneda.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Original_maxim.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(10).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(11).Value = Global.System.DBNull.Value
             End If
-            If (Original_carbu_id.HasValue = true) Then
+            If (Original_euros.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(12).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(Original_carbu_id.Value,Integer)
+                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(Original_euros.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(12).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(13).Value = Global.System.DBNull.Value
@@ -4351,8 +4353,8 @@ Namespace carburantDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal actual As Global.System.Nullable(Of Double), ByVal maxim As Global.System.Nullable(Of Double), ByVal moneda As Global.System.Nullable(Of Double), ByVal carbu_id As Global.System.Nullable(Of Integer), ByVal empresa_id As Integer, ByVal Original_diposit_id As Integer, ByVal Original_actual As Global.System.Nullable(Of Double), ByVal Original_maxim As Global.System.Nullable(Of Double), ByVal Original_moneda As Global.System.Nullable(Of Double), ByVal Original_carbu_id As Global.System.Nullable(Of Integer), ByVal Original_empresa_id As Integer) As Integer
-            Return Me.Update(actual, maxim, moneda, carbu_id, empresa_id, Original_diposit_id, Original_actual, Original_maxim, Original_moneda, Original_carbu_id, Original_empresa_id, Original_diposit_id)
+        Public Overloads Overridable Function Update(ByVal nom_carburant As String, ByVal actual As Global.System.Nullable(Of Double), ByVal maxim As Global.System.Nullable(Of Double), ByVal euros As Global.System.Nullable(Of Double), ByVal empresa_id As Integer, ByVal Original_diposit_id As Integer, ByVal Original_nom_carburant As String, ByVal Original_actual As Global.System.Nullable(Of Double), ByVal Original_maxim As Global.System.Nullable(Of Double), ByVal Original_euros As Global.System.Nullable(Of Double), ByVal Original_empresa_id As Integer) As Integer
+            Return Me.Update(nom_carburant, actual, maxim, euros, empresa_id, Original_diposit_id, Original_nom_carburant, Original_actual, Original_maxim, Original_euros, Original_empresa_id, Original_diposit_id)
         End Function
     End Class
     
@@ -5877,7 +5879,7 @@ Namespace carburantDataSetTableAdapters
             tableMapping.ColumnMappings.Add("diposit_id", "diposit_id")
             tableMapping.ColumnMappings.Add("targeta", "targeta")
             tableMapping.ColumnMappings.Add("capacitat", "capacitat")
-            tableMapping.ColumnMappings.Add("diners", "diners")
+            tableMapping.ColumnMappings.Add("euros", "euros")
             tableMapping.ColumnMappings.Add("pagat", "pagat")
             tableMapping.ColumnMappings.Add("data_venda", "data_venda")
             Me._adapter.TableMappings.Add(tableMapping)
@@ -5886,10 +5888,10 @@ Namespace carburantDataSetTableAdapters
             Me._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[venda] WHERE (([venda_id] = @Original_venda_id) AND ([diposit_"& _ 
                 "id] = @Original_diposit_id) AND ((@IsNull_targeta = 1 AND [targeta] IS NULL) OR "& _ 
                 "([targeta] = @Original_targeta)) AND ((@IsNull_capacitat = 1 AND [capacitat] IS "& _ 
-                "NULL) OR ([capacitat] = @Original_capacitat)) AND ((@IsNull_diners = 1 AND [dine"& _ 
-                "rs] IS NULL) OR ([diners] = @Original_diners)) AND ((@IsNull_pagat = 1 AND [paga"& _ 
-                "t] IS NULL) OR ([pagat] = @Original_pagat)) AND ([data_venda] = @Original_data_v"& _ 
-                "enda))"
+                "NULL) OR ([capacitat] = @Original_capacitat)) AND ((@IsNull_euros = 1 AND [euros"& _ 
+                "] IS NULL) OR ([euros] = @Original_euros)) AND ((@IsNull_pagat = 1 AND [pagat] I"& _ 
+                "S NULL) OR ([pagat] = @Original_pagat)) AND ([data_venda] = @Original_data_venda"& _ 
+                "))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_venda_id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "venda_id", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_diposit_id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "diposit_id", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
@@ -5897,41 +5899,41 @@ Namespace carburantDataSetTableAdapters
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_targeta", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "targeta", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_capacitat", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "capacitat", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_capacitat", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "capacitat", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_diners", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "diners", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_diners", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "diners", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_euros", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "euros", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_euros", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "euros", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_pagat", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "pagat", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_pagat", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "pagat", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_data_venda", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "data_venda", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[venda] ([diposit_id], [targeta], [capacitat], [diners], [pagat"& _ 
-                "], [data_venda]) VALUES (@diposit_id, @targeta, @capacitat, @diners, @pagat, @da"& _ 
-                "ta_venda);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT venda_id, diposit_id, targeta, capacitat, diners, pagat, data"& _ 
-                "_venda FROM venda WHERE (venda_id = SCOPE_IDENTITY())"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[venda] ([diposit_id], [targeta], [capacitat], [euros], [pagat]"& _ 
+                ", [data_venda]) VALUES (@diposit_id, @targeta, @capacitat, @euros, @pagat, @data"& _ 
+                "_venda);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT venda_id, diposit_id, targeta, capacitat, euros, pagat, data_ve"& _ 
+                "nda FROM venda WHERE (venda_id = SCOPE_IDENTITY())"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@diposit_id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "diposit_id", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@targeta", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "targeta", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@capacitat", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "capacitat", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@diners", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "diners", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@euros", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "euros", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@pagat", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "pagat", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@data_venda", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "data_venda", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
             Me._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[venda] SET [diposit_id] = @diposit_id, [targeta] = @targeta, [capac"& _ 
-                "itat] = @capacitat, [diners] = @diners, [pagat] = @pagat, [data_venda] = @data_v"& _ 
-                "enda WHERE (([venda_id] = @Original_venda_id) AND ([diposit_id] = @Original_dipo"& _ 
-                "sit_id) AND ((@IsNull_targeta = 1 AND [targeta] IS NULL) OR ([targeta] = @Origin"& _ 
-                "al_targeta)) AND ((@IsNull_capacitat = 1 AND [capacitat] IS NULL) OR ([capacitat"& _ 
-                "] = @Original_capacitat)) AND ((@IsNull_diners = 1 AND [diners] IS NULL) OR ([di"& _ 
-                "ners] = @Original_diners)) AND ((@IsNull_pagat = 1 AND [pagat] IS NULL) OR ([pag"& _ 
-                "at] = @Original_pagat)) AND ([data_venda] = @Original_data_venda));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT vend"& _ 
-                "a_id, diposit_id, targeta, capacitat, diners, pagat, data_venda FROM venda WHERE"& _ 
-                " (venda_id = @venda_id)"
+                "itat] = @capacitat, [euros] = @euros, [pagat] = @pagat, [data_venda] = @data_ven"& _ 
+                "da WHERE (([venda_id] = @Original_venda_id) AND ([diposit_id] = @Original_diposi"& _ 
+                "t_id) AND ((@IsNull_targeta = 1 AND [targeta] IS NULL) OR ([targeta] = @Original"& _ 
+                "_targeta)) AND ((@IsNull_capacitat = 1 AND [capacitat] IS NULL) OR ([capacitat] "& _ 
+                "= @Original_capacitat)) AND ((@IsNull_euros = 1 AND [euros] IS NULL) OR ([euros]"& _ 
+                " = @Original_euros)) AND ((@IsNull_pagat = 1 AND [pagat] IS NULL) OR ([pagat] = "& _ 
+                "@Original_pagat)) AND ([data_venda] = @Original_data_venda));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT venda_id, "& _ 
+                "diposit_id, targeta, capacitat, euros, pagat, data_venda FROM venda WHERE (venda"& _ 
+                "_id = @venda_id)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@diposit_id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "diposit_id", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@targeta", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "targeta", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@capacitat", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "capacitat", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@diners", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "diners", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@euros", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "euros", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@pagat", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "pagat", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@data_venda", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "data_venda", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_venda_id", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "venda_id", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
@@ -5940,8 +5942,8 @@ Namespace carburantDataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_targeta", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "targeta", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_capacitat", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "capacitat", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_capacitat", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "capacitat", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_diners", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "diners", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_diners", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "diners", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_euros", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "euros", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_euros", Global.System.Data.SqlDbType.Float, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "euros", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_pagat", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "pagat", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_pagat", Global.System.Data.SqlDbType.Bit, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "pagat", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_data_venda", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "data_venda", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
@@ -5961,8 +5963,8 @@ Namespace carburantDataSetTableAdapters
             Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT venda_id, diposit_id, targeta, capacitat, diners, pagat, data_venda FROM d"& _ 
-                "bo.venda"
+            Me._commandCollection(0).CommandText = "SELECT venda_id, diposit_id, targeta, capacitat, euros, pagat, data_venda FROM db"& _ 
+                "o.venda"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -6022,7 +6024,7 @@ Namespace carburantDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_venda_id As Integer, ByVal Original_diposit_id As Integer, ByVal Original_targeta As String, ByVal Original_capacitat As Global.System.Nullable(Of Double), ByVal Original_diners As Global.System.Nullable(Of Double), ByVal Original_pagat As Global.System.Nullable(Of Boolean), ByVal Original_data_venda As Date) As Integer
+        Public Overloads Overridable Function Delete(ByVal Original_venda_id As Integer, ByVal Original_diposit_id As Integer, ByVal Original_targeta As String, ByVal Original_capacitat As Global.System.Nullable(Of Double), ByVal Original_euros As Global.System.Nullable(Of Double), ByVal Original_pagat As Global.System.Nullable(Of Boolean), ByVal Original_data_venda As Date) As Integer
             Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_venda_id,Integer)
             Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_diposit_id,Integer)
             If (Original_targeta Is Nothing) Then
@@ -6039,9 +6041,9 @@ Namespace carburantDataSetTableAdapters
                 Me.Adapter.DeleteCommand.Parameters(4).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(5).Value = Global.System.DBNull.Value
             End If
-            If (Original_diners.HasValue = true) Then
+            If (Original_euros.HasValue = true) Then
                 Me.Adapter.DeleteCommand.Parameters(6).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(7).Value = CType(Original_diners.Value,Double)
+                Me.Adapter.DeleteCommand.Parameters(7).Value = CType(Original_euros.Value,Double)
             Else
                 Me.Adapter.DeleteCommand.Parameters(6).Value = CType(1,Object)
                 Me.Adapter.DeleteCommand.Parameters(7).Value = Global.System.DBNull.Value
@@ -6073,7 +6075,7 @@ Namespace carburantDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal diposit_id As Integer, ByVal targeta As String, ByVal capacitat As Global.System.Nullable(Of Double), ByVal diners As Global.System.Nullable(Of Double), ByVal pagat As Global.System.Nullable(Of Boolean), ByVal data_venda As Date) As Integer
+        Public Overloads Overridable Function Insert(ByVal diposit_id As Integer, ByVal targeta As String, ByVal capacitat As Global.System.Nullable(Of Double), ByVal euros As Global.System.Nullable(Of Double), ByVal pagat As Global.System.Nullable(Of Boolean), ByVal data_venda As Date) As Integer
             Me.Adapter.InsertCommand.Parameters(0).Value = CType(diposit_id,Integer)
             If (targeta Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
@@ -6085,8 +6087,8 @@ Namespace carburantDataSetTableAdapters
             Else
                 Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
             End If
-            If (diners.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(3).Value = CType(diners.Value,Double)
+            If (euros.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(3).Value = CType(euros.Value,Double)
             Else
                 Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
             End If
@@ -6115,7 +6117,7 @@ Namespace carburantDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal diposit_id As Integer, ByVal targeta As String, ByVal capacitat As Global.System.Nullable(Of Double), ByVal diners As Global.System.Nullable(Of Double), ByVal pagat As Global.System.Nullable(Of Boolean), ByVal data_venda As Date, ByVal Original_venda_id As Integer, ByVal Original_diposit_id As Integer, ByVal Original_targeta As String, ByVal Original_capacitat As Global.System.Nullable(Of Double), ByVal Original_diners As Global.System.Nullable(Of Double), ByVal Original_pagat As Global.System.Nullable(Of Boolean), ByVal Original_data_venda As Date, ByVal venda_id As Integer) As Integer
+        Public Overloads Overridable Function Update(ByVal diposit_id As Integer, ByVal targeta As String, ByVal capacitat As Global.System.Nullable(Of Double), ByVal euros As Global.System.Nullable(Of Double), ByVal pagat As Global.System.Nullable(Of Boolean), ByVal data_venda As Date, ByVal Original_venda_id As Integer, ByVal Original_diposit_id As Integer, ByVal Original_targeta As String, ByVal Original_capacitat As Global.System.Nullable(Of Double), ByVal Original_euros As Global.System.Nullable(Of Double), ByVal Original_pagat As Global.System.Nullable(Of Boolean), ByVal Original_data_venda As Date, ByVal venda_id As Integer) As Integer
             Me.Adapter.UpdateCommand.Parameters(0).Value = CType(diposit_id,Integer)
             If (targeta Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(1).Value = Global.System.DBNull.Value
@@ -6127,8 +6129,8 @@ Namespace carburantDataSetTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
             End If
-            If (diners.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(diners.Value,Double)
+            If (euros.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(euros.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(3).Value = Global.System.DBNull.Value
             End If
@@ -6154,9 +6156,9 @@ Namespace carburantDataSetTableAdapters
                 Me.Adapter.UpdateCommand.Parameters(10).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(11).Value = Global.System.DBNull.Value
             End If
-            If (Original_diners.HasValue = true) Then
+            If (Original_euros.HasValue = true) Then
                 Me.Adapter.UpdateCommand.Parameters(12).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(Original_diners.Value,Double)
+                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(Original_euros.Value,Double)
             Else
                 Me.Adapter.UpdateCommand.Parameters(12).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(13).Value = Global.System.DBNull.Value
@@ -6189,8 +6191,8 @@ Namespace carburantDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
-        Public Overloads Overridable Function Update(ByVal diposit_id As Integer, ByVal targeta As String, ByVal capacitat As Global.System.Nullable(Of Double), ByVal diners As Global.System.Nullable(Of Double), ByVal pagat As Global.System.Nullable(Of Boolean), ByVal data_venda As Date, ByVal Original_venda_id As Integer, ByVal Original_diposit_id As Integer, ByVal Original_targeta As String, ByVal Original_capacitat As Global.System.Nullable(Of Double), ByVal Original_diners As Global.System.Nullable(Of Double), ByVal Original_pagat As Global.System.Nullable(Of Boolean), ByVal Original_data_venda As Date) As Integer
-            Return Me.Update(diposit_id, targeta, capacitat, diners, pagat, data_venda, Original_venda_id, Original_diposit_id, Original_targeta, Original_capacitat, Original_diners, Original_pagat, Original_data_venda, Original_venda_id)
+        Public Overloads Overridable Function Update(ByVal diposit_id As Integer, ByVal targeta As String, ByVal capacitat As Global.System.Nullable(Of Double), ByVal euros As Global.System.Nullable(Of Double), ByVal pagat As Global.System.Nullable(Of Boolean), ByVal data_venda As Date, ByVal Original_venda_id As Integer, ByVal Original_diposit_id As Integer, ByVal Original_targeta As String, ByVal Original_capacitat As Global.System.Nullable(Of Double), ByVal Original_euros As Global.System.Nullable(Of Double), ByVal Original_pagat As Global.System.Nullable(Of Boolean), ByVal Original_data_venda As Date) As Integer
+            Return Me.Update(diposit_id, targeta, capacitat, euros, pagat, data_venda, Original_venda_id, Original_diposit_id, Original_targeta, Original_capacitat, Original_euros, Original_pagat, Original_data_venda, Original_venda_id)
         End Function
     End Class
     

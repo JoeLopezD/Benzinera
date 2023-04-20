@@ -181,6 +181,7 @@ Partial Class Gasolinera
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(59, 23)
         Me.Button1.TabIndex = 36
+        Me.Button1.Tag = "1"
         Me.Button1.Text = "Recarregar"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -190,6 +191,7 @@ Partial Class Gasolinera
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(59, 23)
         Me.Button2.TabIndex = 37
+        Me.Button2.Tag = "2"
         Me.Button2.Text = "Recarregar"
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -199,6 +201,7 @@ Partial Class Gasolinera
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(59, 23)
         Me.Button3.TabIndex = 38
+        Me.Button3.Tag = "3"
         Me.Button3.Text = "Recarregar"
         Me.Button3.UseVisualStyleBackColor = True
         '
@@ -208,6 +211,7 @@ Partial Class Gasolinera
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(59, 23)
         Me.Button4.TabIndex = 39
+        Me.Button4.Tag = "4"
         Me.Button4.Text = "Recarregar"
         Me.Button4.UseVisualStyleBackColor = True
         '
@@ -217,6 +221,7 @@ Partial Class Gasolinera
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(59, 23)
         Me.Button5.TabIndex = 40
+        Me.Button5.Tag = "5"
         Me.Button5.Text = "Recarregar"
         Me.Button5.UseVisualStyleBackColor = True
         '
