@@ -25,7 +25,6 @@ Partial Class DetailOil
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DetailOil))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -42,6 +41,7 @@ Partial Class DetailOil
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.MyVerticalProgessBar1 = New Projecte_Gasolinera.MyVerticalProgessBar()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -64,13 +64,6 @@ Partial Class DetailOil
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 26
         Me.PictureBox1.TabStop = False
-        '
-        'ProgressBar1
-        '
-        Me.ProgressBar1.Location = New System.Drawing.Point(363, 207)
-        Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(27, 357)
-        Me.ProgressBar1.TabIndex = 28
         '
         'Button2
         '
@@ -275,11 +268,19 @@ Partial Class DetailOil
         Me.PictureBox6.TabIndex = 49
         Me.PictureBox6.TabStop = False
         '
+        'MyVerticalProgessBar1
+        '
+        Me.MyVerticalProgessBar1.Location = New System.Drawing.Point(363, 245)
+        Me.MyVerticalProgessBar1.Name = "MyVerticalProgessBar1"
+        Me.MyVerticalProgessBar1.Size = New System.Drawing.Size(33, 305)
+        Me.MyVerticalProgessBar1.TabIndex = 50
+        '
         'DetailOil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1086, 640)
+        Me.Controls.Add(Me.MyVerticalProgessBar1)
         Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.RadioButton2)
         Me.Controls.Add(Me.RadioButton1)
@@ -296,7 +297,6 @@ Partial Class DetailOil
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "DetailOil"
@@ -310,7 +310,6 @@ Partial Class DetailOil
 
     Friend WithEvents Button1 As Button
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents ProgressBar1 As ProgressBar
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
@@ -327,4 +326,5 @@ Partial Class DetailOil
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents MyVerticalProgessBar1 As MyVerticalProgessBar
 End Class
