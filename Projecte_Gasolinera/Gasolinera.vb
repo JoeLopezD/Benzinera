@@ -8,6 +8,6 @@
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click, Button2.Click, Button3.Click, Button4.Click, Button5.Click
-
+        DetailOil.Show()
     End Sub
 End Class

@@ -41,16 +41,18 @@ Partial Class DetailOil
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(215, 353)
+        Me.Button1.Location = New System.Drawing.Point(215, 448)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(142, 81)
         Me.Button1.TabIndex = 27
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Recaregar"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'PictureBox1
@@ -263,11 +265,22 @@ Partial Class DetailOil
         Me.RadioButton2.Text = "L"
         Me.RadioButton2.UseVisualStyleBackColor = True
         '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
+        Me.PictureBox6.Location = New System.Drawing.Point(215, 356)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(142, 77)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 49
+        Me.PictureBox6.TabStop = False
+        '
         'DetailOil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1086, 640)
+        Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.RadioButton2)
         Me.Controls.Add(Me.RadioButton1)
         Me.Controls.Add(Me.TextBox3)
@@ -289,6 +302,7 @@ Partial Class DetailOil
         Me.Name = "DetailOil"
         Me.Text = "DetailOil"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -312,4 +326,5 @@ Partial Class DetailOil
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents PictureBox6 As PictureBox
 End Class
