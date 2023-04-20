@@ -13,3 +13,7 @@ C:\Users\Anomalia\documents\visual studio 2015\Projects\Projecte_Gasolinera\Proj
 C:\Users\Anomalia\documents\visual studio 2015\Projects\Projecte_Gasolinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.pdb
 C:\Users\Anomalia\documents\visual studio 2015\Projects\Projecte_Gasolinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Form2.resources
 C:\Users\Anomalia\documents\visual studio 2015\Projects\Projecte_Gasolinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Gasolinera.resources
+C:\Users\Anomalia\Documents\Visual Studio 2015\Projects\Projecte_Gasolinera2\Benzinera\Projecte_Gasolinera\bin\Debug\Projecte_Gasolinera.exe.config
+C:\Users\Anomalia\Documents\Visual Studio 2015\Projects\Projecte_Gasolinera2\Benzinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.exe
+C:\Users\Anomalia\Documents\Visual Studio 2015\Projects\Projecte_Gasolinera2\Benzinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.xml
+C:\Users\Anomalia\Documents\Visual Studio 2015\Projects\Projecte_Gasolinera2\Benzinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.pdb
