@@ -45,3 +45,4 @@ C:\Users\Anomalia\Documents\Visual Studio 2015\Projects\Projecte_Gasolinera2\Ben
 C:\Users\Anomalia\Documents\Visual Studio 2015\Projects\Projecte_Gasolinera2\Benzinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Resources.resources
 C:\Users\Anomalia\Documents\Visual Studio 2015\Projects\Projecte_Gasolinera2\Benzinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Registre_admin.resources
 C:\Users\Anomalia\Documents\Visual Studio 2015\Projects\Projecte_Gasolinera2\Benzinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.vbproj.GenerateResource.Cache
+C:\Users\Anomalia\Documents\Visual Studio 2015\Projects\Projecte_Gasolinera2\Benzinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Pagament.resources

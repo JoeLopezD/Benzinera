@@ -42,6 +42,7 @@ Partial Class DetailOil
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.MyVerticalProgessBar1 = New Projecte_Gasolinera.MyVerticalProgessBar()
+        Me.Button14 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -187,7 +188,7 @@ Partial Class DetailOil
         Me.Button11.BackColor = System.Drawing.Color.Red
         Me.Button11.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button11.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button11.Location = New System.Drawing.Point(666, 458)
+        Me.Button11.Location = New System.Drawing.Point(666, 520)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(59, 55)
         Me.Button11.TabIndex = 43
@@ -200,9 +201,9 @@ Partial Class DetailOil
         Me.Button12.BackColor = System.Drawing.Color.DimGray
         Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button12.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button12.Location = New System.Drawing.Point(731, 458)
+        Me.Button12.Location = New System.Drawing.Point(666, 458)
         Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(59, 55)
+        Me.Button12.Size = New System.Drawing.Size(189, 55)
         Me.Button12.TabIndex = 44
         Me.Button12.Tag = "0"
         Me.Button12.Text = "0"
@@ -213,7 +214,7 @@ Partial Class DetailOil
         Me.Button13.BackColor = System.Drawing.Color.Green
         Me.Button13.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button13.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button13.Location = New System.Drawing.Point(796, 458)
+        Me.Button13.Location = New System.Drawing.Point(796, 520)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(59, 55)
         Me.Button13.TabIndex = 45
@@ -275,11 +276,25 @@ Partial Class DetailOil
         Me.MyVerticalProgessBar1.Size = New System.Drawing.Size(33, 364)
         Me.MyVerticalProgessBar1.TabIndex = 50
         '
+        'Button14
+        '
+        Me.Button14.BackColor = System.Drawing.Color.DimGray
+        Me.Button14.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button14.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button14.Location = New System.Drawing.Point(731, 520)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(59, 55)
+        Me.Button14.TabIndex = 51
+        Me.Button14.Tag = "coma"
+        Me.Button14.Text = ","
+        Me.Button14.UseVisualStyleBackColor = False
+        '
         'DetailOil
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1086, 640)
+        Me.Controls.Add(Me.Button14)
         Me.Controls.Add(Me.MyVerticalProgessBar1)
         Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.RadioButton2)
@@ -327,4 +342,5 @@ Partial Class DetailOil
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents MyVerticalProgessBar1 As MyVerticalProgessBar
+    Friend WithEvents Button14 As Button
 End Class
