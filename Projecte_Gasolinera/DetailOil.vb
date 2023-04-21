@@ -58,4 +58,8 @@
         End If
 
     End Sub
+
+    Private Sub DetailOil_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        TextBox3.Enabled = False
+    End Sub
 End Class
