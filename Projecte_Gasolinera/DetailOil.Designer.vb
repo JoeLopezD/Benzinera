@@ -41,8 +41,8 @@ Partial Class DetailOil
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.MyVerticalProgessBar1 = New Projecte_Gasolinera.MyVerticalProgessBar()
         Me.Button14 = New System.Windows.Forms.Button()
+        Me.MyVerticalProgessBar1 = New Projecte_Gasolinera.MyVerticalProgessBar()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -192,7 +192,7 @@ Partial Class DetailOil
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(59, 55)
         Me.Button11.TabIndex = 43
-        Me.Button11.Tag = "1"
+        Me.Button11.Tag = "98"
         Me.Button11.Text = "X"
         Me.Button11.UseVisualStyleBackColor = False
         '
@@ -218,7 +218,7 @@ Partial Class DetailOil
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(59, 55)
         Me.Button13.TabIndex = 45
-        Me.Button13.Tag = "1"
+        Me.Button13.Tag = "100"
         Me.Button13.Text = "O"
         Me.Button13.UseVisualStyleBackColor = False
         '
@@ -230,7 +230,7 @@ Partial Class DetailOil
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(189, 62)
         Me.TextBox3.TabIndex = 46
-        Me.TextBox3.Text = " €"
+        Me.TextBox3.Text = "0€"
         Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'RadioButton1
@@ -269,13 +269,6 @@ Partial Class DetailOil
         Me.PictureBox6.TabIndex = 49
         Me.PictureBox6.TabStop = False
         '
-        'MyVerticalProgessBar1
-        '
-        Me.MyVerticalProgessBar1.Location = New System.Drawing.Point(363, 211)
-        Me.MyVerticalProgessBar1.Name = "MyVerticalProgessBar1"
-        Me.MyVerticalProgessBar1.Size = New System.Drawing.Size(33, 364)
-        Me.MyVerticalProgessBar1.TabIndex = 50
-        '
         'Button14
         '
         Me.Button14.BackColor = System.Drawing.Color.DimGray
@@ -285,9 +278,16 @@ Partial Class DetailOil
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(59, 55)
         Me.Button14.TabIndex = 51
-        Me.Button14.Tag = "coma"
+        Me.Button14.Tag = "99"
         Me.Button14.Text = ","
         Me.Button14.UseVisualStyleBackColor = False
+        '
+        'MyVerticalProgessBar1
+        '
+        Me.MyVerticalProgessBar1.Location = New System.Drawing.Point(363, 211)
+        Me.MyVerticalProgessBar1.Name = "MyVerticalProgessBar1"
+        Me.MyVerticalProgessBar1.Size = New System.Drawing.Size(33, 364)
+        Me.MyVerticalProgessBar1.TabIndex = 50
         '
         'DetailOil
         '

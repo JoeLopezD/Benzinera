@@ -42,7 +42,7 @@ Public Class Login
 
             If TextBox1.Text <> "" And TextBox2.Text <> "" Then
                 Dim ds As New DataSet
-                Dim adaptador As New SqlDataAdapter("Select " + emailorpassword + ", contraseña from " + varBBDD, cn)
+                Dim adaptador As New SqlDataAdapter("Select " + emailorpassword + " , contraseña from " + varBBDD, cn)
                 adaptador.Fill(ds, "dades")
 
                 For i As Integer = 0 To ds.Tables("dades").Rows.Count - 1
