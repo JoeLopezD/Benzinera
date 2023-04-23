@@ -42,6 +42,7 @@ Partial Class DetailOil
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Button14 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.MyVerticalProgessBar1 = New Projecte_Gasolinera.MyVerticalProgessBar()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -224,6 +225,7 @@ Partial Class DetailOil
         '
         'TextBox3
         '
+        Me.TextBox3.Enabled = False
         Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(666, 198)
         Me.TextBox3.Multiline = True
@@ -262,7 +264,7 @@ Partial Class DetailOil
         'PictureBox6
         '
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(215, 356)
+        Me.PictureBox6.Location = New System.Drawing.Point(215, 357)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(142, 77)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -278,9 +280,18 @@ Partial Class DetailOil
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(59, 55)
         Me.Button14.TabIndex = 51
-        Me.Button14.Tag = "99"
+        Me.Button14.Tag = ","
         Me.Button14.Text = ","
         Me.Button14.UseVisualStyleBackColor = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(585, 61)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.TabIndex = 52
+        Me.Label1.Text = "Label1"
         '
         'MyVerticalProgessBar1
         '
@@ -294,6 +305,7 @@ Partial Class DetailOil
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1086, 640)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button14)
         Me.Controls.Add(Me.MyVerticalProgessBar1)
         Me.Controls.Add(Me.PictureBox6)
@@ -315,6 +327,7 @@ Partial Class DetailOil
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "DetailOil"
+        Me.Tag = "coma"
         Me.Text = "DetailOil"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
@@ -343,4 +356,5 @@ Partial Class DetailOil
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents MyVerticalProgessBar1 As MyVerticalProgessBar
     Friend WithEvents Button14 As Button
+    Friend WithEvents Label1 As Label
 End Class

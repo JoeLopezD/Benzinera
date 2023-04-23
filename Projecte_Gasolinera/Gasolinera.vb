@@ -4,7 +4,7 @@ Imports System.Text
 
 Public Class Gasolinera
 
-    Private conexion As String = "Data Source=DESKTOP-TPUG9J9\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
+    Private conexion As String = "Data Source=DESKTOP-4GK2TOH\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
     Dim varBBDDTypeOilReturn As String
     Dim emailorpassword As String
 
@@ -50,11 +50,11 @@ Public Class Gasolinera
         cn.ConnectionString = conexion
 
         Dim ds As New DataSet
-        'Dim adaptador As New SqlDataAdapter("Select actual from diposit where nom_carburant = " + varBBDDTypeOilReturn, cn)
         Dim adaptador As New SqlDataAdapter("Select actual, nom_carburant from diposit", cn)
         adaptador.Fill(ds, "dades")
         For i As Integer = 0 To ds.Tables("dades").Rows.Count - 1
             If ds.Tables("Dades").Rows(i).Item(1).Equals(typeOfOil) Then
+                DetailOil.Label1.Tag = ds.Tables("Dades").Rows(i).Item(1)
                 DetailOil.Show()
                 DetailOil.MyVerticalProgessBar1.Value = ds.Tables("Dades").Rows(i).Item(0)
             End If
