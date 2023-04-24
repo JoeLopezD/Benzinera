@@ -8,10 +8,11 @@ Public Class Pagament
     '
     '
     '
-    Private conexion As String = "Data Source=DESKTOP-4GK2TOH\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
+    Private conexion As String = "Data Source=DESKTOP-TPUG9J9\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
     Dim clientCVV, clientCardCNumber, clientName, clientExpDate, typeOfOil As String
     Dim totalLitres, preuCombustible, inputValor As String
     Private Sub Pagament_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        DetailOil.Enabled = True
         Label7.Text = Label7.Tag
         Label8.Text = Label8.Tag
         inputValor = Label11.Tag
@@ -48,9 +49,17 @@ Public Class Pagament
         clientExpDate = TextBox4.Text
         clientCVV = TextBox3.Text
 
-        'Guardar datos en DB
+        If TextBox2.TextLength < 16 Then
+            Label14.Text = ""
+            Label14.Text = "El Nº de la tarjeta no es correcte"
+        End If
+        If TextBox3.TextLength < 3 Then
+            Label14.Text = ""
+            Label14.Text = "El Nº del Codi CVV no es correcte"
+        End If
+        If TextBox2.TextLength > 16 And TextBox3.TextLength > 3 Then
 
-        '
+        End If
 
     End Sub
 End Class

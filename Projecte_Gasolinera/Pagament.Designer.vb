@@ -47,6 +47,7 @@ Partial Class Pagament
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -153,6 +154,7 @@ Partial Class Pagament
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.Label14)
         Me.GroupBox2.Controls.Add(Me.TextBox4)
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Controls.Add(Me.TextBox1)
@@ -215,6 +217,7 @@ Partial Class Pagament
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Checked = True
         Me.RadioButton2.Enabled = False
         Me.RadioButton2.Location = New System.Drawing.Point(8, 28)
         Me.RadioButton2.Name = "RadioButton2"
@@ -232,7 +235,6 @@ Partial Class Pagament
         Me.RadioButton4.Name = "RadioButton4"
         Me.RadioButton4.Size = New System.Drawing.Size(50, 17)
         Me.RadioButton4.TabIndex = 19
-        Me.RadioButton4.TabStop = True
         Me.RadioButton4.Text = "Litres"
         Me.RadioButton4.UseVisualStyleBackColor = True
         '
@@ -294,6 +296,15 @@ Partial Class Pagament
         Me.Label13.TabIndex = 25
         Me.Label13.Text = "Litres:"
         '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(23, 157)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(45, 13)
+        Me.Label14.TabIndex = 13
+        Me.Label14.Text = "Label14"
+        '
         'Pagament
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -350,4 +361,5 @@ Partial Class Pagament
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Label13 As Label
+    Friend WithEvents Label14 As Label
 End Class
