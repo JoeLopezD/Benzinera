@@ -34,6 +34,7 @@ Partial Class Pagament
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -47,7 +48,7 @@ Partial Class Pagament
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -170,6 +171,15 @@ Partial Class Pagament
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Dades de pagament"
         '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(23, 157)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(45, 13)
+        Me.Label14.TabIndex = 13
+        Me.Label14.Text = "Label14"
+        '
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(289, 51)
@@ -283,9 +293,9 @@ Partial Class Pagament
         Me.Label12.AutoSize = True
         Me.Label12.Location = New System.Drawing.Point(279, 32)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(55, 13)
+        Me.Label12.Size = New System.Drawing.Size(13, 13)
         Me.Label12.TabIndex = 24
-        Me.Label12.Text = "Total litres"
+        Me.Label12.Text = "0"
         '
         'Label13
         '
@@ -296,20 +306,21 @@ Partial Class Pagament
         Me.Label13.TabIndex = 25
         Me.Label13.Text = "Litres:"
         '
-        'Label14
+        'Label15
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(23, 157)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(45, 13)
-        Me.Label14.TabIndex = 13
-        Me.Label14.Text = "Label14"
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(309, 32)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(13, 13)
+        Me.Label15.TabIndex = 26
+        Me.Label15.Text = "L"
         '
         'Pagament
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(750, 499)
+        Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
@@ -362,4 +373,5 @@ Partial Class Pagament
     Friend WithEvents Label12 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
 End Class

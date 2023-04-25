@@ -2,15 +2,11 @@
 Imports System.Security.Cryptography
 Imports System.Text
 Public Class Pagament
-    'El precio total está en la variable "preuCombustible" 
-    'el total de litros está en la variable "totalLitres"
-    'el tipo de gasolina en "typeOfOil"
-    '
-    '
-    '
     Private conexion As String = "Data Source=DESKTOP-TPUG9J9\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
     Dim clientCVV, clientCardCNumber, clientName, clientExpDate, typeOfOil As String
-    Dim totalLitres, preuCombustible, inputValor As String
+    Dim preuCombustible, inputValor As String
+    Dim totalLitres As Double
+    Dim totalActual As Double
     Private Sub Pagament_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DetailOil.Enabled = True
         Label7.Text = Label7.Tag
@@ -28,10 +24,12 @@ Public Class Pagament
             totalLitres = preuCombustible / Label8.Tag
         End If
         preuCombustible = preuCombustible + "€"
-        totalLitres = totalLitres + "L"
-
         Label10.Text = preuCombustible
-        Label12.Text = totalLitres
+
+        Dim num As Double = totalLitres
+        Dim roundedNum As Double = Math.Round(num, 2, MidpointRounding.ToEven)
+
+        Label12.Text = roundedNum
 
     End Sub
 
@@ -57,8 +55,30 @@ Public Class Pagament
             Label14.Text = ""
             Label14.Text = "El Nº del Codi CVV no es correcte"
         End If
-        If TextBox2.TextLength > 16 And TextBox3.TextLength > 3 Then
+        If TextBox2.TextLength = 16 And TextBox3.TextLength = 3 Then
+            '------------------------------------------------------------
+            Dim cn As New SqlConnection
+            cn.ConnectionString = conexion
+            Dim ds As New DataSet
+            Dim adaptador As New SqlDataAdapter("select diposit_id, actual, nom_carburant from diposit", cn)
+            adaptador.Fill(ds, "dades")
 
+            For i As Integer = 0 To ds.Tables("dades").Rows.Count - 1
+                If ds.Tables("Dades").Rows(i).Item(2).Equals(Label7.Text) Then
+                    totalActual = ds.Tables("Dades").Rows(i).Item(1)
+                    totalActual = totalActual - Label12.Text
+
+                    Dim fila As DataRow = Form2.CarburantDataSet.diposit.Rows.Find(Label7.Text)
+                    fila.BeginEdit()
+                    fila(2) = totalActual
+                    fila.EndEdit()
+                    Form2.DipositTableAdapter.Update(Form2.CarburantDataSet.diposit)
+                    'Me.listarDatosFormula()
+                End If
+            Next
+
+
+            '------------------------------------------------------------
         End If
 
     End Sub

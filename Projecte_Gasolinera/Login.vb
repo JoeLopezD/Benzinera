@@ -66,35 +66,6 @@ Public Class Login
             End If
         End Using
 
-
-
-
-        '____________________________________________________________________________________________
-        'If TextBox1.Text <> "" And TextBox2.Text <> "" Then
-        '    Dim ds As New DataSet
-        '    Dim adaptador As New SqlDataAdapter("Select email, contraseña from login_admin ", cn)
-        '    adaptador.Fill(ds, "dades")
-
-        '    For i As Integer = 0 To ds.Tables("dades").Rows.Count - 1
-        '        If ds.Tables("Dades").Rows(i).Item(0).Equals(TextBox1.Text) Then
-        '            If ds.Tables("Dades").Rows(i).Item(1).Equals(TextBox2.Text) Then
-        '                Form2.Show()
-        '                Hide()
-        '                Dim loged As Boolean = True
-        '            Else
-        '                Label3.Visible = True
-        '                Label3.Text = "La Contraseña no es correcta"
-        '            End If
-        '        Else
-        '            Label3.Visible = True
-        '            Label3.Text = "El Usuari no es correcte"
-        '        End If
-        '    Next
-        'Else
-        '    Label3.Visible = True
-        '    Label3.Text = "Els camps de Email i contraseña no poden estar buits"
-        'End If
-
     End Sub
 
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
