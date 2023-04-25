@@ -68,12 +68,7 @@ Public Class Pagament
                     totalActual = ds.Tables("Dades").Rows(i).Item(1)
                     totalActual = totalActual - Label12.Text
 
-                    Dim fila As DataRow = Form2.CarburantDataSet.diposit.Rows.Find(Label7.Text)
-                    fila.BeginEdit()
-                    fila(2) = totalActual
-                    fila.EndEdit()
-                    Form2.DipositTableAdapter.Update(Form2.CarburantDataSet.diposit)
-                    'Me.listarDatosFormula()
+                    Form2.DipositTableAdapter.UpdateQuery(totalActual, Label7.Text)
                 End If
             Next
 
