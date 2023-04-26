@@ -59,10 +59,9 @@ Partial Class Gasolinera
         'PictureBox5
         '
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(1125, 314)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox5.Location = New System.Drawing.Point(844, 255)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(183, 374)
+        Me.PictureBox5.Size = New System.Drawing.Size(137, 304)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox5.TabIndex = 24
         Me.PictureBox5.TabStop = False
@@ -70,10 +69,9 @@ Partial Class Gasolinera
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(891, 314)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox4.Location = New System.Drawing.Point(668, 255)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(183, 374)
+        Me.PictureBox4.Size = New System.Drawing.Size(137, 304)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox4.TabIndex = 23
         Me.PictureBox4.TabStop = False
@@ -81,10 +79,9 @@ Partial Class Gasolinera
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(641, 314)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox3.Location = New System.Drawing.Point(481, 255)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(183, 374)
+        Me.PictureBox3.Size = New System.Drawing.Size(137, 304)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 22
         Me.PictureBox3.TabStop = False
@@ -92,10 +89,9 @@ Partial Class Gasolinera
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(407, 314)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox2.Location = New System.Drawing.Point(305, 255)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(183, 374)
+        Me.PictureBox2.Size = New System.Drawing.Size(137, 304)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 21
         Me.PictureBox2.TabStop = False
@@ -103,10 +99,9 @@ Partial Class Gasolinera
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(149, 314)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Location = New System.Drawing.Point(112, 255)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(183, 374)
+        Me.PictureBox1.Size = New System.Drawing.Size(137, 304)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 20
         Me.PictureBox1.TabStop = False
@@ -117,30 +112,28 @@ Partial Class Gasolinera
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InfoToolStripMenuItem, Me.RegistrarToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(8, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1407, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1055, 24)
         Me.MenuStrip1.TabIndex = 30
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'InfoToolStripMenuItem
         '
         Me.InfoToolStripMenuItem.Name = "InfoToolStripMenuItem"
-        Me.InfoToolStripMenuItem.Size = New System.Drawing.Size(47, 24)
+        Me.InfoToolStripMenuItem.Size = New System.Drawing.Size(40, 20)
         Me.InfoToolStripMenuItem.Text = "Info"
         '
         'RegistrarToolStripMenuItem
         '
         Me.RegistrarToolStripMenuItem.Name = "RegistrarToolStripMenuItem"
-        Me.RegistrarToolStripMenuItem.Size = New System.Drawing.Size(80, 24)
+        Me.RegistrarToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
         Me.RegistrarToolStripMenuItem.Text = "Registrar"
         '
         'PictureBox6
         '
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(207, 521)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox6.Location = New System.Drawing.Point(155, 423)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(79, 63)
+        Me.PictureBox6.Size = New System.Drawing.Size(59, 51)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox6.TabIndex = 31
         Me.PictureBox6.TabStop = False
@@ -148,10 +141,9 @@ Partial Class Gasolinera
         'PictureBox7
         '
         Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(464, 521)
-        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox7.Location = New System.Drawing.Point(348, 423)
         Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(79, 63)
+        Me.PictureBox7.Size = New System.Drawing.Size(59, 51)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox7.TabIndex = 32
         Me.PictureBox7.TabStop = False
@@ -159,10 +151,9 @@ Partial Class Gasolinera
         'PictureBox8
         '
         Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
-        Me.PictureBox8.Location = New System.Drawing.Point(699, 521)
-        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox8.Location = New System.Drawing.Point(524, 423)
         Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(79, 63)
+        Me.PictureBox8.Size = New System.Drawing.Size(59, 51)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox8.TabIndex = 33
         Me.PictureBox8.TabStop = False
@@ -170,10 +161,9 @@ Partial Class Gasolinera
         'PictureBox9
         '
         Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
-        Me.PictureBox9.Location = New System.Drawing.Point(949, 521)
-        Me.PictureBox9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox9.Location = New System.Drawing.Point(712, 423)
         Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(79, 63)
+        Me.PictureBox9.Size = New System.Drawing.Size(59, 51)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox9.TabIndex = 34
         Me.PictureBox9.TabStop = False
@@ -181,20 +171,18 @@ Partial Class Gasolinera
         'PictureBox10
         '
         Me.PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), System.Drawing.Image)
-        Me.PictureBox10.Location = New System.Drawing.Point(1183, 521)
-        Me.PictureBox10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox10.Location = New System.Drawing.Point(887, 423)
         Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(79, 63)
+        Me.PictureBox10.Size = New System.Drawing.Size(59, 51)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox10.TabIndex = 35
         Me.PictureBox10.TabStop = False
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(207, 591)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Location = New System.Drawing.Point(155, 480)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(79, 28)
+        Me.Button1.Size = New System.Drawing.Size(59, 23)
         Me.Button1.TabIndex = 36
         Me.Button1.Tag = "1"
         Me.Button1.Text = "Recarregar"
@@ -202,10 +190,9 @@ Partial Class Gasolinera
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(464, 591)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Location = New System.Drawing.Point(348, 480)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(79, 28)
+        Me.Button2.Size = New System.Drawing.Size(59, 23)
         Me.Button2.TabIndex = 37
         Me.Button2.Tag = "2"
         Me.Button2.Text = "Recarregar"
@@ -213,10 +200,9 @@ Partial Class Gasolinera
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(699, 591)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button3.Location = New System.Drawing.Point(524, 480)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(79, 28)
+        Me.Button3.Size = New System.Drawing.Size(59, 23)
         Me.Button3.TabIndex = 38
         Me.Button3.Tag = "3"
         Me.Button3.Text = "Recarregar"
@@ -224,10 +210,9 @@ Partial Class Gasolinera
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(949, 591)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button4.Location = New System.Drawing.Point(712, 480)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(79, 28)
+        Me.Button4.Size = New System.Drawing.Size(59, 23)
         Me.Button4.TabIndex = 39
         Me.Button4.Tag = "4"
         Me.Button4.Text = "Recarregar"
@@ -235,10 +220,9 @@ Partial Class Gasolinera
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(1183, 591)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button5.Location = New System.Drawing.Point(887, 480)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(79, 28)
+        Me.Button5.Size = New System.Drawing.Size(59, 23)
         Me.Button5.TabIndex = 40
         Me.Button5.Tag = "5"
         Me.Button5.Text = "Recarregar"
@@ -247,18 +231,19 @@ Partial Class Gasolinera
         'PictureBox11
         '
         Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
-        Me.PictureBox11.Location = New System.Drawing.Point(0, 31)
+        Me.PictureBox11.Location = New System.Drawing.Point(0, 25)
+        Me.PictureBox11.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(1407, 678)
+        Me.PictureBox11.Size = New System.Drawing.Size(1055, 551)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox11.TabIndex = 41
         Me.PictureBox11.TabStop = False
         '
         'Gasolinera
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1407, 708)
+        Me.ClientSize = New System.Drawing.Size(1055, 575)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -277,7 +262,6 @@ Partial Class Gasolinera
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.PictureBox11)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Gasolinera"
         Me.Text = "Gasolinera"
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()

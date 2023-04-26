@@ -67,8 +67,15 @@ Public Class Pagament
                 If ds.Tables("Dades").Rows(i).Item(2).Equals(Label7.Text) Then
                     totalActual = ds.Tables("Dades").Rows(i).Item(1)
                     totalActual = totalActual - Label12.Text
-
                     Form2.DipositTableAdapter.UpdateQuery(totalActual, Label7.Text)
+                    '________________Canviar a un Timer per a que semble que es fa la carrega del diposit_____________________
+                    For j As Integer = 0 To 10
+                        If j = 10 Then
+                            Close()
+                        End If
+                    Next
+                    '___________________________________________________
+
                 End If
             Next
 
