@@ -49,6 +49,7 @@ Partial Class Pagament
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -146,7 +147,7 @@ Partial Class Pagament
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(320, 359)
+        Me.Button1.Location = New System.Drawing.Point(423, 343)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 12
@@ -315,11 +316,21 @@ Partial Class Pagament
         Me.Label15.TabIndex = 26
         Me.Label15.Text = "L"
         '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(504, 348)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(56, 13)
+        Me.Label16.TabIndex = 27
+        Me.Label16.Text = "Ets client?"
+        '
         'Pagament
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(750, 499)
+        Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label12)
@@ -374,4 +385,5 @@ Partial Class Pagament
     Friend WithEvents Label13 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
+    Friend WithEvents Label16 As Label
 End Class
