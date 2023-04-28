@@ -86,7 +86,6 @@ Public Class Pagament
                     varDipositId = ds.Tables("Dades").Rows(i).Item(0)
                     Form2.VendaTableAdapter.Insert(varDipositId, TextBox2.Text, Label12.Text, Label10.Text, True, Today)
                     Form2.VendaTableAdapter.Fill(Form2.CarburantDataSet.venda)
-
                     '_________________________________________________________
                     Close()
                 End If

@@ -5,6 +5,7 @@ Public Class Login
     Private conexion As String = "Data Source=DESKTOP-TPUG9J9\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
     Dim varBBDD As String
     Dim emailorpassword As String
+    Dim adminTrue As String
 
     Public Function TranslateVarFunction(ByVal translateVar As String) As String
         If translateVar = "yes" Then
@@ -48,7 +49,7 @@ Public Class Login
                 For i As Integer = 0 To ds.Tables("dades").Rows.Count - 1
                     If ds.Tables("Dades").Rows(i).Item(0).Equals(TextBox1.Text) Then
                         If ds.Tables("Dades").Rows(i).Item(1).Equals(zx) Then
-                            Form2.Show()
+                            Administracio.Show()
                             Hide()
                             Dim loged As Boolean = True
                         Else
@@ -70,11 +71,10 @@ Public Class Login
 
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
         Registre_admin.Show()
+        adminTrue = "yes"
+        Registre_admin.TranslateVarFunction(adminTrue)
         Enabled = False
         Hide()
     End Sub
 
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
-        Form2.Show()
-    End Sub
 End Class

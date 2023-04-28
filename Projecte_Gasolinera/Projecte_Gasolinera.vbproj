@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administracio.Designer.vb">
+      <DependentUpon>Administracio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administracio.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="carburantDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -146,6 +152,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Administracio.resx">
+      <DependentUpon>Administracio.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DetailOil.resx">
       <DependentUpon>DetailOil.vb</DependentUpon>
     </EmbeddedResource>
