@@ -98,6 +98,8 @@ Partial Class Administracio
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -151,6 +153,7 @@ Partial Class Administracio
         '
         'TabPage2
         '
+        Me.TabPage2.Controls.Add(Me.ComboBox1)
         Me.TabPage2.Controls.Add(Me.Button8)
         Me.TabPage2.Controls.Add(Me.Button7)
         Me.TabPage2.Controls.Add(Me.Button6)
@@ -503,6 +506,7 @@ Partial Class Administracio
         '
         'TabPage4
         '
+        Me.TabPage4.Controls.Add(Me.ComboBox2)
         Me.TabPage4.Controls.Add(Me.Button12)
         Me.TabPage4.Controls.Add(Me.Button11)
         Me.TabPage4.Controls.Add(Me.Button10)
@@ -623,7 +627,7 @@ Partial Class Administracio
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(425, 399)
+        Me.Button6.Location = New System.Drawing.Point(470, 399)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 23)
         Me.Button6.TabIndex = 7
@@ -632,7 +636,7 @@ Partial Class Administracio
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(506, 399)
+        Me.Button7.Location = New System.Drawing.Point(288, 399)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(75, 23)
         Me.Button7.TabIndex = 8
@@ -641,7 +645,7 @@ Partial Class Administracio
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(587, 399)
+        Me.Button8.Location = New System.Drawing.Point(369, 399)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(75, 23)
         Me.Button8.TabIndex = 9
@@ -650,7 +654,7 @@ Partial Class Administracio
         '
         'Button10
         '
-        Me.Button10.Location = New System.Drawing.Point(700, 241)
+        Me.Button10.Location = New System.Drawing.Point(773, 300)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(75, 23)
         Me.Button10.TabIndex = 9
@@ -659,7 +663,7 @@ Partial Class Administracio
         '
         'Button11
         '
-        Me.Button11.Location = New System.Drawing.Point(781, 241)
+        Me.Button11.Location = New System.Drawing.Point(813, 193)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(75, 23)
         Me.Button11.TabIndex = 10
@@ -668,12 +672,28 @@ Partial Class Administracio
         '
         'Button12
         '
-        Me.Button12.Location = New System.Drawing.Point(862, 241)
+        Me.Button12.Location = New System.Drawing.Point(894, 193)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(75, 23)
         Me.Button12.TabIndex = 11
         Me.Button12.Text = "Eliminar"
         Me.Button12.UseVisualStyleBackColor = True
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(161, 399)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 10
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(686, 193)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox2.TabIndex = 12
         '
         'Administracio
         '
@@ -786,4 +806,6 @@ Partial Class Administracio
     Friend WithEvents Button12 As Button
     Friend WithEvents Button11 As Button
     Friend WithEvents Button10 As Button
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents ComboBox2 As ComboBox
 End Class
