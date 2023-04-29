@@ -51,3 +51,4 @@ C:\Users\Anomalia\Documents\Visual Studio 2015\Projects\Projecte_Gasolinera2\Ben
 C:\Users\Anomalia\Documents\Visual Studio 2015\Projects\Projecte_Gasolinera2\Benzinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Administracio.resources
 C:\Users\Joel\Desktop\Projecte_Gasolinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Administracio.resources
 C:\Users\Joel\Desktop\Projecte_Gasolinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.EsClient.resources
+C:\Users\Anomalia\Documents\Visual Studio 2015\Projects\Projecte_Gasolinera2\Benzinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Administracio_Empreses.resources

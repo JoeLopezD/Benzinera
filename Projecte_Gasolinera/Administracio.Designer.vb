@@ -72,9 +72,7 @@ Partial Class Administracio
         Me.VendaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.Button12 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
         Me.DataGridView5 = New System.Windows.Forms.DataGridView()
         Me.DipositidDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NomcarburantDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -100,6 +98,10 @@ Partial Class Administracio
         Me.DipositBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.ComandaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ComandaTableAdapter = New Projecte_Gasolinera.carburantDataSetTableAdapters.comandaTableAdapter()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -500,10 +502,12 @@ Partial Class Administracio
         '
         'TabPage4
         '
+        Me.TabPage4.Controls.Add(Me.Label2)
+        Me.TabPage4.Controls.Add(Me.Label1)
+        Me.TabPage4.Controls.Add(Me.Button1)
+        Me.TabPage4.Controls.Add(Me.TextBox1)
         Me.TabPage4.Controls.Add(Me.ComboBox2)
-        Me.TabPage4.Controls.Add(Me.Button12)
         Me.TabPage4.Controls.Add(Me.Button11)
-        Me.TabPage4.Controls.Add(Me.Button10)
         Me.TabPage4.Controls.Add(Me.DataGridView5)
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
@@ -516,37 +520,19 @@ Partial Class Administracio
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(686, 193)
+        Me.ComboBox2.Location = New System.Drawing.Point(720, 193)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox2.TabIndex = 12
         '
-        'Button12
-        '
-        Me.Button12.Location = New System.Drawing.Point(894, 193)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(75, 23)
-        Me.Button12.TabIndex = 11
-        Me.Button12.Text = "Eliminar"
-        Me.Button12.UseVisualStyleBackColor = True
-        '
         'Button11
         '
-        Me.Button11.Location = New System.Drawing.Point(813, 193)
+        Me.Button11.Location = New System.Drawing.Point(847, 191)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(75, 23)
         Me.Button11.TabIndex = 10
         Me.Button11.Text = "Modificar"
         Me.Button11.UseVisualStyleBackColor = True
-        '
-        'Button10
-        '
-        Me.Button10.Location = New System.Drawing.Point(773, 300)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(75, 23)
-        Me.Button10.TabIndex = 9
-        Me.Button10.Text = "Afegir"
-        Me.Button10.UseVisualStyleBackColor = True
         '
         'DataGridView5
         '
@@ -698,6 +684,40 @@ Partial Class Administracio
         '
         Me.ComandaTableAdapter.ClearBeforeFill = True
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(767, 302)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(121, 20)
+        Me.TextBox1.TabIndex = 13
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(791, 328)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 14
+        Me.Button1.Text = "Modificar"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(764, 286)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(29, 13)
+        Me.Label1.TabIndex = 15
+        Me.Label1.Text = "Preu"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(720, 221)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(92, 13)
+        Me.Label2.TabIndex = 16
+        Me.Label2.Text = "*Selecciona la ID "
+        '
         'Administracio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -723,6 +743,7 @@ Partial Class Administracio
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.VendaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage4.ResumeLayout(False)
+        Me.TabPage4.PerformLayout()
         CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DipositBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage5.ResumeLayout(False)
@@ -807,9 +828,11 @@ Partial Class Administracio
     Friend WithEvents Button8 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Button6 As Button
-    Friend WithEvents Button12 As Button
     Friend WithEvents Button11 As Button
-    Friend WithEvents Button10 As Button
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents TextBox1 As TextBox
 End Class

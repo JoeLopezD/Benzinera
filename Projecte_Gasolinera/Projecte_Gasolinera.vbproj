@@ -78,6 +78,12 @@
     <Compile Include="Administracio.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Administracio_Empreses.Designer.vb">
+      <DependentUpon>Administracio_Empreses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administracio_Empreses.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="carburantDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -154,6 +160,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Administracio.resx">
       <DependentUpon>Administracio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracio_Empreses.resx">
+      <DependentUpon>Administracio_Empreses.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DetailOil.resx">
       <DependentUpon>DetailOil.vb</DependentUpon>
