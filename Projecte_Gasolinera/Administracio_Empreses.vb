@@ -5,7 +5,7 @@ Imports System.Text
 Public Class Administracio_Empreses
     Private conexion As String = "Data Source=DESKTOP-TPUG9J9\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
     Dim clientCVV, clientCardCNumber, clientName, clientExpDate, typeOfOil As String
-    Dim inputValor As String
+    Dim inputValor1, inputValor2, inputValor3, inputValor4, inputValor5, inputValor6, inputValor7, inputValor8, inputValor9, inputValor10 As String
     Dim ValorModificar As String
     Dim translateVarModificarorAfegir As String
     Dim LabelValue As String
@@ -16,19 +16,32 @@ Public Class Administracio_Empreses
             Dim cn As New SqlConnection
             cn.ConnectionString = conexion
             Dim ds As New DataSet
-            Dim adaptador As New SqlDataAdapter("select nom from empresa_recarega", cn)
+            Dim adaptador As New SqlDataAdapter("select nom,email,telef,adreça,cp,municipi,comarca,provincia,comunitat,pais from empresa_recarega", cn)
             adaptador.Fill(ds, "dades")
 
             For i As Integer = 0 To ds.Tables("dades").Rows.Count - 1
                 If ds.Tables("Dades").Rows(i).Item(0).Equals(Administracio.ComboBox1.Text) Then
-                    inputValor = ds.Tables("Dades").Rows(i).Item(0)
-                    TextBox1.Text = inputValor
-                    '_________________________________________________________
-                    'Dim varDipositId As Integer
-                    'varDipositId = ds.Tables("Dades").Rows(i).Item(0)
-                    'Form2.VendaTableAdapter.Insert(varDipositId, TextBox2.Text, Label12.Text, Label10.Text, True, Today)
-                    'Form2.VendaTableAdapter.Fill(Form2.CarburantDataSet.venda)
-                    '_________________________________________________________
+                    inputValor1 = ds.Tables("Dades").Rows(i).Item(0)
+                    inputValor2 = ds.Tables("Dades").Rows(i).Item(1)
+                    inputValor3 = ds.Tables("Dades").Rows(i).Item(2)
+                    inputValor4 = ds.Tables("Dades").Rows(i).Item(3)
+                    inputValor5 = ds.Tables("Dades").Rows(i).Item(4)
+                    inputValor6 = ds.Tables("Dades").Rows(i).Item(5)
+                    inputValor7 = ds.Tables("Dades").Rows(i).Item(6)
+                    inputValor8 = ds.Tables("Dades").Rows(i).Item(7)
+                    inputValor9 = ds.Tables("Dades").Rows(i).Item(8)
+                    inputValor10 = ds.Tables("Dades").Rows(i).Item(9)
+                    TextBox1.Text = inputValor1
+                    TextBox2.Text = inputValor2
+                    TextBox3.Text = inputValor3
+                    TextBox4.Text = inputValor4
+                    TextBox5.Text = inputValor5
+                    TextBox6.Text = inputValor6
+                    TextBox7.Text = inputValor7
+                    TextBox8.Text = inputValor8
+                    TextBox9.Text = inputValor9
+                    TextBox10.Text = inputValor10
+
                 End If
             Next
         End If
@@ -39,13 +52,30 @@ Public Class Administracio_Empreses
     Public Function TranslateVarFunction(ByVal translateVar As String) As String
         If translateVar = "Modificar" Then
             LabelValue = "Modificar"
+            Button1.Visible = True
+            Button2.Visible = False
             Show()
         ElseIf translateVar = "Afegir"
             LabelValue = "Afegir"
+            Button1.Visible = False
+            Button2.Visible = True
             Show()
         End If
 
         Return LabelValue
     End Function
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        '_________________________________________________________
+
+        '_________________________________________________________
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        '_________________________________________________________
+        Administracio.Empresa_recaregaTableAdapter.Insert(TextBox1.Text, TextBox2.Text, TextBox3.Text, TextBox4.Text, TextBox5.Text, TextBox6.Text, TextBox7.Text, TextBox8.Text, TextBox9.Text, TextBox10.Text)
+        Administracio.Empresa_recaregaTableAdapter.Fill(Administracio.CarburantDataSet.empresa_recarega)
+        '_________________________________________________________
+    End Sub
 
 End Class

@@ -44,6 +44,7 @@ Partial Class Administracio_Empreses
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'TextBox1
@@ -225,11 +226,21 @@ Partial Class Administracio_Empreses
         Me.Label11.TabIndex = 21
         Me.Label11.Text = "Afegir Empresa"
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(259, 357)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(125, 23)
+        Me.Button2.TabIndex = 22
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Administracio_Empreses
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(669, 537)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label10)
@@ -281,4 +292,5 @@ Partial Class Administracio_Empreses
     Friend WithEvents Label10 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Label11 As Label
+    Friend WithEvents Button2 As Button
 End Class
