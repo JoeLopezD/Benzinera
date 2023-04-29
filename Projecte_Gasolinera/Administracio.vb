@@ -14,4 +14,11 @@
         Me.Login_adminTableAdapter.Fill(Me.CarburantDataSet.login_admin)
 
     End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Dim empresaId = ComboBox1.SelectedValue.ToString
+        Me.Empresa_recaregaTableAdapter.DeleteQuery(empresaId)
+        Me.Empresa_recaregaTableAdapter.Fill(Me.CarburantDataSet.empresa_recarega)
+        DataGridView4.DataSource = Me.CarburantDataSet.empresa_recarega
+    End Sub
 End Class

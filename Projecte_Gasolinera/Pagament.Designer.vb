@@ -346,6 +346,7 @@ Partial Class Pagament
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Pagament"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Pagament"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

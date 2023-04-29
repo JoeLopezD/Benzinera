@@ -328,6 +328,7 @@ Partial Class DetailOil
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "DetailOil"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Tag = "coma"
         Me.Text = "DetailOil"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

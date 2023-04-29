@@ -11,9 +11,11 @@ Public Class Login
         If translateVar = "yes" Then
             varBBDD = "login_admin"
             emailorpassword = "email"
+            Label1.Text = "Correu electronic"
         ElseIf translateVar = "no"
             varBBDD = "login_client"
             emailorpassword = "dni"
+            Label1.Text = "DNI"
         End If
 
         Return varBBDD

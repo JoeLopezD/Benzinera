@@ -34,7 +34,7 @@ Partial Class Login
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(152, 168)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(218, 20)
         Me.TextBox1.TabIndex = 0
@@ -42,7 +42,7 @@ Partial Class Login
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(152, 250)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(218, 20)
         Me.TextBox2.TabIndex = 1
@@ -63,14 +63,14 @@ Partial Class Login
         Me.Label2.Location = New System.Drawing.Point(149, 225)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
+        Me.Label2.Size = New System.Drawing.Size(66, 13)
         Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Label2"
+        Me.Label2.Text = "Contrasenya"
         '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(200, 285)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(105, 19)
         Me.Button1.TabIndex = 4
@@ -109,8 +109,9 @@ Partial Class Login
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Login"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()

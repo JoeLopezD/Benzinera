@@ -25,28 +25,30 @@ Partial Class Administracio
         Me.components = New System.ComponentModel.Container()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.DataGridView4 = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.CarburantDataSet = New Projecte_Gasolinera.carburantDataSet()
-        Me.LoginadminBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Login_adminTableAdapter = New Projecte_Gasolinera.carburantDataSetTableAdapters.login_adminTableAdapter()
         Me.LoginadminidDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EmailDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ContraseñaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.RolDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.LoginclientBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Login_clientTableAdapter = New Projecte_Gasolinera.carburantDataSetTableAdapters.login_clientTableAdapter()
-        Me.ContraseñaDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DniDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.LoginclientidDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LoginadminBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.CarburantDataSet = New Projecte_Gasolinera.carburantDataSet()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.DataGridView3 = New System.Windows.Forms.DataGridView()
+        Me.LoginclientidDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DniDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ContraseñaDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LoginclientBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.EmpresarecaregaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Empresa_recaregaTableAdapter = New Projecte_Gasolinera.carburantDataSetTableAdapters.empresa_recaregaTableAdapter()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.DataGridView4 = New System.Windows.Forms.DataGridView()
         Me.EmpresaidDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NomDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EmailDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -58,11 +60,8 @@ Partial Class Administracio
         Me.ProvinciaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ComunitatDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PaisDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.VendaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.VendaTableAdapter = New Projecte_Gasolinera.carburantDataSetTableAdapters.vendaTableAdapter()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.VendaidDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DipositidDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TargetaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -70,13 +69,12 @@ Partial Class Administracio
         Me.EurosDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PagatDataGridViewCheckBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.DatavendaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DipositBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DipositTableAdapter = New Projecte_Gasolinera.carburantDataSetTableAdapters.dipositTableAdapter()
-        Me.DipositBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ComandaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ComandaTableAdapter = New Projecte_Gasolinera.carburantDataSetTableAdapters.comandaTableAdapter()
-        Me.DipositBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.VendaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
         Me.DataGridView5 = New System.Windows.Forms.DataGridView()
         Me.DipositidDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NomcarburantDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -84,46 +82,48 @@ Partial Class Administracio
         Me.MaximDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EurosDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EmpresaidDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DipositBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
         Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.DataGridView6 = New System.Windows.Forms.DataGridView()
-        Me.ComandaBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.ComandaidDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EmpresaidDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DipositidDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.LitresDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataenviatDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.ComandaBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Login_adminTableAdapter = New Projecte_Gasolinera.carburantDataSetTableAdapters.login_adminTableAdapter()
+        Me.Login_clientTableAdapter = New Projecte_Gasolinera.carburantDataSetTableAdapters.login_clientTableAdapter()
+        Me.Empresa_recaregaTableAdapter = New Projecte_Gasolinera.carburantDataSetTableAdapters.empresa_recaregaTableAdapter()
+        Me.VendaTableAdapter = New Projecte_Gasolinera.carburantDataSetTableAdapters.vendaTableAdapter()
+        Me.DipositBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DipositTableAdapter = New Projecte_Gasolinera.carburantDataSetTableAdapters.dipositTableAdapter()
+        Me.DipositBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ComandaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ComandaTableAdapter = New Projecte_Gasolinera.carburantDataSetTableAdapters.comandaTableAdapter()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LoginadminBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CarburantDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
+        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LoginclientBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
+        CType(Me.EmpresarecaregaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage3.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CarburantDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LoginadminBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LoginclientBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.EmpresarecaregaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VendaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DipositBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DipositBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ComandaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DipositBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage4.SuspendLayout()
         CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DipositBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage5.SuspendLayout()
         CType(Me.DataGridView6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ComandaBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DipositBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DipositBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ComandaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -151,61 +151,6 @@ Partial Class Administracio
         Me.TabPage1.Text = "Gestió Client"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
-        'TabPage2
-        '
-        Me.TabPage2.Controls.Add(Me.ComboBox1)
-        Me.TabPage2.Controls.Add(Me.Button8)
-        Me.TabPage2.Controls.Add(Me.Button7)
-        Me.TabPage2.Controls.Add(Me.Button6)
-        Me.TabPage2.Controls.Add(Me.Button5)
-        Me.TabPage2.Controls.Add(Me.Button4)
-        Me.TabPage2.Controls.Add(Me.Button3)
-        Me.TabPage2.Controls.Add(Me.DataGridView4)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(991, 500)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Gestió Espreses"
-        Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'TabPage3
-        '
-        Me.TabPage3.Controls.Add(Me.DataGridView1)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(991, 500)
-        Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "Gestió Ventes"
-        Me.TabPage3.UseVisualStyleBackColor = True
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.VendaidDataGridViewTextBoxColumn, Me.DipositidDataGridViewTextBoxColumn, Me.TargetaDataGridViewTextBoxColumn, Me.CapacitatDataGridViewTextBoxColumn, Me.EurosDataGridViewTextBoxColumn, Me.PagatDataGridViewCheckBoxColumn, Me.DatavendaDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.VendaBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(2, 2)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(745, 498)
-        Me.DataGridView1.TabIndex = 1
-        '
-        'DataGridView4
-        '
-        Me.DataGridView4.AutoGenerateColumns = False
-        Me.DataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView4.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EmpresaidDataGridViewTextBoxColumn, Me.NomDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn1, Me.TelefDataGridViewTextBoxColumn, Me.AdreçaDataGridViewTextBoxColumn, Me.CpDataGridViewTextBoxColumn, Me.MunicipiDataGridViewTextBoxColumn, Me.ComarcaDataGridViewTextBoxColumn, Me.ProvinciaDataGridViewTextBoxColumn, Me.ComunitatDataGridViewTextBoxColumn, Me.PaisDataGridViewTextBoxColumn})
-        Me.DataGridView4.DataSource = Me.EmpresarecaregaBindingSource
-        Me.DataGridView4.Location = New System.Drawing.Point(0, 0)
-        Me.DataGridView4.Margin = New System.Windows.Forms.Padding(2)
-        Me.DataGridView4.Name = "DataGridView4"
-        Me.DataGridView4.RowTemplate.Height = 24
-        Me.DataGridView4.Size = New System.Drawing.Size(988, 359)
-        Me.DataGridView4.TabIndex = 3
-        '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.Control
@@ -216,17 +161,6 @@ Partial Class Administracio
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Administració Gerent"
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.BackColor = System.Drawing.SystemColors.Control
-        Me.GroupBox2.Controls.Add(Me.DataGridView3)
-        Me.GroupBox2.Location = New System.Drawing.Point(566, 3)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(429, 497)
-        Me.GroupBox2.TabIndex = 1
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Administració Client"
         '
         'DataGridView2
         '
@@ -240,20 +174,6 @@ Partial Class Administracio
         Me.DataGridView2.RowTemplate.Height = 24
         Me.DataGridView2.Size = New System.Drawing.Size(444, 437)
         Me.DataGridView2.TabIndex = 1
-        '
-        'CarburantDataSet
-        '
-        Me.CarburantDataSet.DataSetName = "carburantDataSet"
-        Me.CarburantDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'LoginadminBindingSource
-        '
-        Me.LoginadminBindingSource.DataMember = "login_admin"
-        Me.LoginadminBindingSource.DataSource = Me.CarburantDataSet
-        '
-        'Login_adminTableAdapter
-        '
-        Me.Login_adminTableAdapter.ClearBeforeFill = True
         '
         'LoginadminidDataGridViewTextBoxColumn
         '
@@ -280,33 +200,26 @@ Partial Class Administracio
         Me.RolDataGridViewTextBoxColumn.HeaderText = "rol"
         Me.RolDataGridViewTextBoxColumn.Name = "RolDataGridViewTextBoxColumn"
         '
-        'LoginclientBindingSource
+        'LoginadminBindingSource
         '
-        Me.LoginclientBindingSource.DataMember = "login_client"
-        Me.LoginclientBindingSource.DataSource = Me.CarburantDataSet
+        Me.LoginadminBindingSource.DataMember = "login_admin"
+        Me.LoginadminBindingSource.DataSource = Me.CarburantDataSet
         '
-        'Login_clientTableAdapter
+        'CarburantDataSet
         '
-        Me.Login_clientTableAdapter.ClearBeforeFill = True
+        Me.CarburantDataSet.DataSetName = "carburantDataSet"
+        Me.CarburantDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'ContraseñaDataGridViewTextBoxColumn1
+        'GroupBox2
         '
-        Me.ContraseñaDataGridViewTextBoxColumn1.DataPropertyName = "contraseña"
-        Me.ContraseñaDataGridViewTextBoxColumn1.HeaderText = "contraseña"
-        Me.ContraseñaDataGridViewTextBoxColumn1.Name = "ContraseñaDataGridViewTextBoxColumn1"
-        '
-        'DniDataGridViewTextBoxColumn
-        '
-        Me.DniDataGridViewTextBoxColumn.DataPropertyName = "dni"
-        Me.DniDataGridViewTextBoxColumn.HeaderText = "dni"
-        Me.DniDataGridViewTextBoxColumn.Name = "DniDataGridViewTextBoxColumn"
-        '
-        'LoginclientidDataGridViewTextBoxColumn
-        '
-        Me.LoginclientidDataGridViewTextBoxColumn.DataPropertyName = "login_client_id"
-        Me.LoginclientidDataGridViewTextBoxColumn.HeaderText = "login_client_id"
-        Me.LoginclientidDataGridViewTextBoxColumn.Name = "LoginclientidDataGridViewTextBoxColumn"
-        Me.LoginclientidDataGridViewTextBoxColumn.ReadOnly = True
+        Me.GroupBox2.BackColor = System.Drawing.SystemColors.Control
+        Me.GroupBox2.Controls.Add(Me.DataGridView3)
+        Me.GroupBox2.Location = New System.Drawing.Point(566, 3)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(429, 497)
+        Me.GroupBox2.TabIndex = 1
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Administració Client"
         '
         'DataGridView3
         '
@@ -321,14 +234,130 @@ Partial Class Administracio
         Me.DataGridView3.Size = New System.Drawing.Size(345, 437)
         Me.DataGridView3.TabIndex = 2
         '
+        'LoginclientidDataGridViewTextBoxColumn
+        '
+        Me.LoginclientidDataGridViewTextBoxColumn.DataPropertyName = "login_client_id"
+        Me.LoginclientidDataGridViewTextBoxColumn.HeaderText = "login_client_id"
+        Me.LoginclientidDataGridViewTextBoxColumn.Name = "LoginclientidDataGridViewTextBoxColumn"
+        Me.LoginclientidDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'DniDataGridViewTextBoxColumn
+        '
+        Me.DniDataGridViewTextBoxColumn.DataPropertyName = "dni"
+        Me.DniDataGridViewTextBoxColumn.HeaderText = "dni"
+        Me.DniDataGridViewTextBoxColumn.Name = "DniDataGridViewTextBoxColumn"
+        '
+        'ContraseñaDataGridViewTextBoxColumn1
+        '
+        Me.ContraseñaDataGridViewTextBoxColumn1.DataPropertyName = "contraseña"
+        Me.ContraseñaDataGridViewTextBoxColumn1.HeaderText = "contraseña"
+        Me.ContraseñaDataGridViewTextBoxColumn1.Name = "ContraseñaDataGridViewTextBoxColumn1"
+        '
+        'LoginclientBindingSource
+        '
+        Me.LoginclientBindingSource.DataMember = "login_client"
+        Me.LoginclientBindingSource.DataSource = Me.CarburantDataSet
+        '
+        'TabPage2
+        '
+        Me.TabPage2.Controls.Add(Me.ComboBox1)
+        Me.TabPage2.Controls.Add(Me.Button8)
+        Me.TabPage2.Controls.Add(Me.Button7)
+        Me.TabPage2.Controls.Add(Me.Button6)
+        Me.TabPage2.Controls.Add(Me.Button5)
+        Me.TabPage2.Controls.Add(Me.Button4)
+        Me.TabPage2.Controls.Add(Me.Button3)
+        Me.TabPage2.Controls.Add(Me.DataGridView4)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(991, 500)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "Gestió Espreses"
+        Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.DataSource = Me.EmpresarecaregaBindingSource
+        Me.ComboBox1.DisplayMember = "nom"
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(161, 399)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 10
+        Me.ComboBox1.ValueMember = "empresa_id"
+        '
         'EmpresarecaregaBindingSource
         '
         Me.EmpresarecaregaBindingSource.DataMember = "empresa_recarega"
         Me.EmpresarecaregaBindingSource.DataSource = Me.CarburantDataSet
         '
-        'Empresa_recaregaTableAdapter
+        'Button8
         '
-        Me.Empresa_recaregaTableAdapter.ClearBeforeFill = True
+        Me.Button8.Location = New System.Drawing.Point(369, 399)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(75, 23)
+        Me.Button8.TabIndex = 9
+        Me.Button8.Text = "Eliminar"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(288, 399)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(75, 23)
+        Me.Button7.TabIndex = 8
+        Me.Button7.Text = "Modificar"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(470, 399)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.TabIndex = 7
+        Me.Button6.Text = "Afegir"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(631, 500)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.TabIndex = 6
+        Me.Button5.Text = "Button5"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(540, 500)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 5
+        Me.Button4.Text = "Button4"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(450, 500)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 4
+        Me.Button3.Text = "Button3"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'DataGridView4
+        '
+        Me.DataGridView4.AutoGenerateColumns = False
+        Me.DataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView4.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EmpresaidDataGridViewTextBoxColumn, Me.NomDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn1, Me.TelefDataGridViewTextBoxColumn, Me.AdreçaDataGridViewTextBoxColumn, Me.CpDataGridViewTextBoxColumn, Me.MunicipiDataGridViewTextBoxColumn, Me.ComarcaDataGridViewTextBoxColumn, Me.ProvinciaDataGridViewTextBoxColumn, Me.ComunitatDataGridViewTextBoxColumn, Me.PaisDataGridViewTextBoxColumn})
+        Me.DataGridView4.DataSource = Me.EmpresarecaregaBindingSource
+        Me.DataGridView4.Location = New System.Drawing.Point(0, 0)
+        Me.DataGridView4.Margin = New System.Windows.Forms.Padding(2)
+        Me.DataGridView4.Name = "DataGridView4"
+        Me.DataGridView4.RowTemplate.Height = 24
+        Me.DataGridView4.Size = New System.Drawing.Size(988, 359)
+        Me.DataGridView4.TabIndex = 3
         '
         'EmpresaidDataGridViewTextBoxColumn
         '
@@ -397,41 +426,29 @@ Partial Class Administracio
         Me.PaisDataGridViewTextBoxColumn.HeaderText = "pais"
         Me.PaisDataGridViewTextBoxColumn.Name = "PaisDataGridViewTextBoxColumn"
         '
-        'Button3
+        'TabPage3
         '
-        Me.Button3.Location = New System.Drawing.Point(450, 500)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 4
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.TabPage3.Controls.Add(Me.DataGridView1)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage3.Size = New System.Drawing.Size(991, 500)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "Gestió Ventes"
+        Me.TabPage3.UseVisualStyleBackColor = True
         '
-        'Button4
+        'DataGridView1
         '
-        Me.Button4.Location = New System.Drawing.Point(540, 500)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 5
-        Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(631, 500)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
-        Me.Button5.TabIndex = 6
-        Me.Button5.Text = "Button5"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'VendaBindingSource
-        '
-        Me.VendaBindingSource.DataMember = "venda"
-        Me.VendaBindingSource.DataSource = Me.CarburantDataSet
-        '
-        'VendaTableAdapter
-        '
-        Me.VendaTableAdapter.ClearBeforeFill = True
+        Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.VendaidDataGridViewTextBoxColumn, Me.DipositidDataGridViewTextBoxColumn, Me.TargetaDataGridViewTextBoxColumn, Me.CapacitatDataGridViewTextBoxColumn, Me.EurosDataGridViewTextBoxColumn, Me.PagatDataGridViewCheckBoxColumn, Me.DatavendaDataGridViewTextBoxColumn})
+        Me.DataGridView1.DataSource = Me.VendaBindingSource
+        Me.DataGridView1.Location = New System.Drawing.Point(2, 2)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(745, 498)
+        Me.DataGridView1.TabIndex = 1
         '
         'VendaidDataGridViewTextBoxColumn
         '
@@ -476,33 +493,10 @@ Partial Class Administracio
         Me.DatavendaDataGridViewTextBoxColumn.HeaderText = "data_venda"
         Me.DatavendaDataGridViewTextBoxColumn.Name = "DatavendaDataGridViewTextBoxColumn"
         '
-        'DipositBindingSource
+        'VendaBindingSource
         '
-        Me.DipositBindingSource.DataMember = "diposit"
-        Me.DipositBindingSource.DataSource = Me.CarburantDataSet
-        '
-        'DipositTableAdapter
-        '
-        Me.DipositTableAdapter.ClearBeforeFill = True
-        '
-        'DipositBindingSource1
-        '
-        Me.DipositBindingSource1.DataMember = "diposit"
-        Me.DipositBindingSource1.DataSource = Me.CarburantDataSet
-        '
-        'ComandaBindingSource
-        '
-        Me.ComandaBindingSource.DataMember = "comanda"
-        Me.ComandaBindingSource.DataSource = Me.CarburantDataSet
-        '
-        'ComandaTableAdapter
-        '
-        Me.ComandaTableAdapter.ClearBeforeFill = True
-        '
-        'DipositBindingSource2
-        '
-        Me.DipositBindingSource2.DataMember = "diposit"
-        Me.DipositBindingSource2.DataSource = Me.CarburantDataSet
+        Me.VendaBindingSource.DataMember = "venda"
+        Me.VendaBindingSource.DataSource = Me.CarburantDataSet
         '
         'TabPage4
         '
@@ -518,6 +512,41 @@ Partial Class Administracio
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Gestió Diposit"
         Me.TabPage4.UseVisualStyleBackColor = True
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(686, 193)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox2.TabIndex = 12
+        '
+        'Button12
+        '
+        Me.Button12.Location = New System.Drawing.Point(894, 193)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(75, 23)
+        Me.Button12.TabIndex = 11
+        Me.Button12.Text = "Eliminar"
+        Me.Button12.UseVisualStyleBackColor = True
+        '
+        'Button11
+        '
+        Me.Button11.Location = New System.Drawing.Point(813, 193)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(75, 23)
+        Me.Button11.TabIndex = 10
+        Me.Button11.Text = "Modificar"
+        Me.Button11.UseVisualStyleBackColor = True
+        '
+        'Button10
+        '
+        Me.Button10.Location = New System.Drawing.Point(773, 300)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(75, 23)
+        Me.Button10.TabIndex = 9
+        Me.Button10.Text = "Afegir"
+        Me.Button10.UseVisualStyleBackColor = True
         '
         'DataGridView5
         '
@@ -567,6 +596,11 @@ Partial Class Administracio
         Me.EmpresaidDataGridViewTextBoxColumn1.HeaderText = "empresa_id"
         Me.EmpresaidDataGridViewTextBoxColumn1.Name = "EmpresaidDataGridViewTextBoxColumn1"
         '
+        'DipositBindingSource2
+        '
+        Me.DipositBindingSource2.DataMember = "diposit"
+        Me.DipositBindingSource2.DataSource = Me.CarburantDataSet
+        '
         'TabPage5
         '
         Me.TabPage5.Controls.Add(Me.DataGridView6)
@@ -588,11 +622,6 @@ Partial Class Administracio
         Me.DataGridView6.Name = "DataGridView6"
         Me.DataGridView6.Size = New System.Drawing.Size(544, 497)
         Me.DataGridView6.TabIndex = 0
-        '
-        'ComandaBindingSource1
-        '
-        Me.ComandaBindingSource1.DataMember = "comanda"
-        Me.ComandaBindingSource1.DataSource = Me.CarburantDataSet
         '
         'ComandaidDataGridViewTextBoxColumn
         '
@@ -625,75 +654,49 @@ Partial Class Administracio
         Me.DataenviatDataGridViewTextBoxColumn.HeaderText = "data_enviat"
         Me.DataenviatDataGridViewTextBoxColumn.Name = "DataenviatDataGridViewTextBoxColumn"
         '
-        'Button6
+        'ComandaBindingSource1
         '
-        Me.Button6.Location = New System.Drawing.Point(470, 399)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 23)
-        Me.Button6.TabIndex = 7
-        Me.Button6.Text = "Afegir"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.ComandaBindingSource1.DataMember = "comanda"
+        Me.ComandaBindingSource1.DataSource = Me.CarburantDataSet
         '
-        'Button7
+        'Login_adminTableAdapter
         '
-        Me.Button7.Location = New System.Drawing.Point(288, 399)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(75, 23)
-        Me.Button7.TabIndex = 8
-        Me.Button7.Text = "Modificar"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.Login_adminTableAdapter.ClearBeforeFill = True
         '
-        'Button8
+        'Login_clientTableAdapter
         '
-        Me.Button8.Location = New System.Drawing.Point(369, 399)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(75, 23)
-        Me.Button8.TabIndex = 9
-        Me.Button8.Text = "Eliminar"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.Login_clientTableAdapter.ClearBeforeFill = True
         '
-        'Button10
+        'Empresa_recaregaTableAdapter
         '
-        Me.Button10.Location = New System.Drawing.Point(773, 300)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(75, 23)
-        Me.Button10.TabIndex = 9
-        Me.Button10.Text = "Afegir"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.Empresa_recaregaTableAdapter.ClearBeforeFill = True
         '
-        'Button11
+        'VendaTableAdapter
         '
-        Me.Button11.Location = New System.Drawing.Point(813, 193)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(75, 23)
-        Me.Button11.TabIndex = 10
-        Me.Button11.Text = "Modificar"
-        Me.Button11.UseVisualStyleBackColor = True
+        Me.VendaTableAdapter.ClearBeforeFill = True
         '
-        'Button12
+        'DipositBindingSource
         '
-        Me.Button12.Location = New System.Drawing.Point(894, 193)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(75, 23)
-        Me.Button12.TabIndex = 11
-        Me.Button12.Text = "Eliminar"
-        Me.Button12.UseVisualStyleBackColor = True
+        Me.DipositBindingSource.DataMember = "diposit"
+        Me.DipositBindingSource.DataSource = Me.CarburantDataSet
         '
-        'ComboBox1
+        'DipositTableAdapter
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(161, 399)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 10
+        Me.DipositTableAdapter.ClearBeforeFill = True
         '
-        'ComboBox2
+        'DipositBindingSource1
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(686, 193)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox2.TabIndex = 12
+        Me.DipositBindingSource1.DataMember = "diposit"
+        Me.DipositBindingSource1.DataSource = Me.CarburantDataSet
+        '
+        'ComandaBindingSource
+        '
+        Me.ComandaBindingSource.DataMember = "comanda"
+        Me.ComandaBindingSource.DataSource = Me.CarburantDataSet
+        '
+        'ComandaTableAdapter
+        '
+        Me.ComandaTableAdapter.ClearBeforeFill = True
         '
         'Administracio
         '
@@ -702,31 +705,32 @@ Partial Class Administracio
         Me.ClientSize = New System.Drawing.Size(1000, 526)
         Me.Controls.Add(Me.TabControl1)
         Me.Name = "Administracio"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Administracio"
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
+        Me.GroupBox1.ResumeLayout(False)
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LoginadminBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CarburantDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
+        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LoginclientBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
+        CType(Me.EmpresarecaregaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage3.ResumeLayout(False)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox2.ResumeLayout(False)
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CarburantDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LoginadminBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LoginclientBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.EmpresarecaregaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.VendaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DipositBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DipositBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ComandaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DipositBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage4.ResumeLayout(False)
         CType(Me.DataGridView5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DipositBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage5.ResumeLayout(False)
         CType(Me.DataGridView6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ComandaBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DipositBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DipositBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ComandaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
