@@ -9,6 +9,7 @@ Public Class Administracio_Empreses
     Dim ValorModificar As String
     Dim translateVarModificarorAfegir As String
     Dim LabelValue As String
+    Dim inputValor11 As Integer
     Private Sub Administracio_Empreses_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If LabelValue = "Modificar" Then
             Label11.Text = "Modificar Empresa"
@@ -16,7 +17,7 @@ Public Class Administracio_Empreses
             Dim cn As New SqlConnection
             cn.ConnectionString = conexion
             Dim ds As New DataSet
-            Dim adaptador As New SqlDataAdapter("select nom,email,telef,adreça,cp,municipi,comarca,provincia,comunitat,pais from empresa_recarega", cn)
+            Dim adaptador As New SqlDataAdapter("select nom,email,telef,adreça,cp,municipi,comarca,provincia,comunitat,pais, empresa_id from empresa_recarega", cn)
             adaptador.Fill(ds, "dades")
 
             For i As Integer = 0 To ds.Tables("dades").Rows.Count - 1
@@ -31,6 +32,7 @@ Public Class Administracio_Empreses
                     inputValor8 = ds.Tables("Dades").Rows(i).Item(7)
                     inputValor9 = ds.Tables("Dades").Rows(i).Item(8)
                     inputValor10 = ds.Tables("Dades").Rows(i).Item(9)
+                    inputValor11 = ds.Tables("Dades").Rows(i).Item(10)
                     TextBox1.Text = inputValor1
                     TextBox2.Text = inputValor2
                     TextBox3.Text = inputValor3
@@ -67,14 +69,16 @@ Public Class Administracio_Empreses
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         '_________________________________________________________
-
+        'Administracio.Empresa_recaregaTableAdapter.Actualizar(TextBox1.Text, TextBox2.Text, TextBox3.Text, TextBox4.Text, TextBox5.Text, TextBox6.Text, TextBox7.Text, TextBox8.Text, TextBox9.Text, TextBox10.Text)
+        'Me.FormulaTableAdapter.UpdateQuery(formulaName, thisDate, activa, formulaId, formulaId)
+        Administracio.Empresa_recaregaTableAdapter.UpdateTest(inputValor1, inputValor11)
         '_________________________________________________________
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         '_________________________________________________________
-        Administracio.Empresa_recaregaTableAdapter.Insert(TextBox1.Text, TextBox2.Text, TextBox3.Text, TextBox4.Text, TextBox5.Text, TextBox6.Text, TextBox7.Text, TextBox8.Text, TextBox9.Text, TextBox10.Text)
-        Administracio.Empresa_recaregaTableAdapter.Fill(Administracio.CarburantDataSet.empresa_recarega)
+        'Administracio.Empresa_recaregaTableAdapter.Insert(TextBox1.Text, TextBox2.Text, TextBox3.Text, TextBox4.Text, TextBox5.Text, TextBox6.Text, TextBox7.Text, TextBox8.Text, TextBox9.Text, TextBox10.Text)
+        'Administracio.Empresa_recaregaTableAdapter.Fill(Administracio.CarburantDataSet.empresa_recarega)
         '_________________________________________________________
     End Sub
 

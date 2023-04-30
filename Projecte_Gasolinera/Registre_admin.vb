@@ -47,4 +47,5 @@ Public Class Registre_admin
 
         End Using
     End Sub
+
 End Class

@@ -292,6 +292,7 @@ Partial Class DetailOil
         Me.Label1.Size = New System.Drawing.Size(39, 13)
         Me.Label1.TabIndex = 52
         Me.Label1.Text = "Label1"
+        Me.Label1.Visible = False
         '
         'MyVerticalProgessBar1
         '
