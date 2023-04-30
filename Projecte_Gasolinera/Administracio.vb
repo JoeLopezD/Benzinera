@@ -40,6 +40,8 @@
             'Administracio_Empreses.Show()
         ElseIf translateVarModificarorAfegir = "no"
             LabelValue = "Afegir"
+            Administracio_Empreses.TranslateVarFunction(LabelValue)
+
             'Administracio_Empreses.Show()
         End If
 

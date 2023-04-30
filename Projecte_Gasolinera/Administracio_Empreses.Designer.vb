@@ -213,7 +213,7 @@ Partial Class Administracio_Empreses
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(125, 23)
         Me.Button1.TabIndex = 20
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Update"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Label11
@@ -232,7 +232,7 @@ Partial Class Administracio_Empreses
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(125, 23)
         Me.Button2.TabIndex = 22
-        Me.Button2.Text = "Button2"
+        Me.Button2.Text = "Afegir"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Administracio_Empreses
