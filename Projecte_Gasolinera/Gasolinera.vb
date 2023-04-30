@@ -4,7 +4,7 @@ Imports System.Text
 
 Public Class Gasolinera
 
-    Private conexion As String = "Data Source=DESKTOP-4GK2TOH\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
+    Private conexion As String = "Data Source=DESKTOP-TPUG9J9\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
     Dim varBBDDTypeOilReturn As String
     Dim emailorpassword As String
 
@@ -63,7 +63,4 @@ Public Class Gasolinera
 
     End Sub
 
-    Private Sub Gasolinera_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class
