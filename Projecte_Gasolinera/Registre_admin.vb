@@ -48,4 +48,7 @@ Public Class Registre_admin
         End Using
     End Sub
 
+    Private Sub Registre_admin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

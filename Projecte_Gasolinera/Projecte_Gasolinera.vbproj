@@ -218,6 +218,21 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="img\imageGasolina95.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Diesel+.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\imageGasolina98.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\imagesDiesel10plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\descarga.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

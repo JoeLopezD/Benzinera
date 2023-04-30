@@ -2,7 +2,7 @@
 Imports System.Security.Cryptography
 Imports System.Text
 Public Class DetailOil
-    Private conexion As String = "Data Source=DESKTOP-TPUG9J9\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
+    Private conexion As String = "Data Source=DESKTOP-4GK2TOH\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
     Dim buttonClicResult, inputValor As String
     Dim finalCharacter = "€", precio, lastCharacter, typeOfOil As String
 
@@ -61,18 +61,30 @@ Public Class DetailOil
 
     Private Sub DetailOil_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         typeOfOil = Label1.Tag
+        PictureBox2.Visible = False
+        PictureBox3.Visible = False
+        PictureBox4.Visible = False
+        PictureBox5.Visible = False
+        PictureBox6.Visible = False
+
         If typeOfOil = "95" Then
-            PictureBox6.BackgroundImage = ImageList1.Images.Item(1)
-            PictureBox6.BackgroundImageLayout = ImageLayout.Stretch
+            PictureBox2.Visible = True
+            ' PictureBox6.BackgroundImageLayout = ImageLayout.Stretch
         ElseIf typeOfOil = "98"
-            PictureBox6.BackgroundImage = ImageList1.Images.Item(2)
-            PictureBox6.BackgroundImageLayout = ImageLayout.Stretch
+            PictureBox3.Visible = True
+            ' PictureBox6.BackgroundImageLayout = ImageLayout.Stretch
         ElseIf typeOfOil = "diesel"
-            PictureBox6.BackgroundImage = ImageList1.Images.Item(3)
-            PictureBox6.BackgroundImageLayout = ImageLayout.Stretch
+            PictureBox4.Visible = True
+
+            'PictureBox6.BackgroundImage = ImageList1.Images.Item(3)
+            'PictureBox6.BackgroundImageLayout = ImageLayout.Stretch
         ElseIf typeOfOil = "dieselPlus"
-            PictureBox6.BackgroundImage = ImageList1.Images.Item(4)
-            PictureBox6.BackgroundImageLayout = ImageLayout.Stretch
+            PictureBox5.Visible = True
+
+            'PictureBox6.BackgroundImage = ImageList1.Images.Item(4)
+            'PictureBox6.BackgroundImageLayout = ImageLayout.Stretch
+        ElseIf typeOfOil = "Electric"
+            PictureBox6.Visible = True
         End If
     End Sub
 
