@@ -61,6 +61,19 @@ Public Class DetailOil
 
     Private Sub DetailOil_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         typeOfOil = Label1.Tag
+        If typeOfOil = "95" Then
+            PictureBox6.BackgroundImage = ImageList1.Images.Item(1)
+            PictureBox6.BackgroundImageLayout = ImageLayout.Stretch
+        ElseIf typeOfOil = "98"
+            PictureBox6.BackgroundImage = ImageList1.Images.Item(2)
+            PictureBox6.BackgroundImageLayout = ImageLayout.Stretch
+        ElseIf typeOfOil = "diesel"
+            PictureBox6.BackgroundImage = ImageList1.Images.Item(3)
+            PictureBox6.BackgroundImageLayout = ImageLayout.Stretch
+        ElseIf typeOfOil = "dieselPlus"
+            PictureBox6.BackgroundImage = ImageList1.Images.Item(4)
+            PictureBox6.BackgroundImageLayout = ImageLayout.Stretch
+        End If
     End Sub
 
     Private Sub Button_Click(sender As Object, e As EventArgs) Handles Button2.Click, Button3.Click, Button4.Click, Button5.Click, Button6.Click, Button7.Click, Button8.Click, Button9.Click, Button10.Click, Button12.Click, Button14.Click

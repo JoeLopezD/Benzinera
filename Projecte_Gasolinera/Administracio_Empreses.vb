@@ -5,11 +5,11 @@ Imports System.Text
 Public Class Administracio_Empreses
     Private conexion As String = "Data Source=DESKTOP-TPUG9J9\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
     Dim clientCVV, clientCardCNumber, clientName, clientExpDate, typeOfOil As String
-    Dim inputValor1, inputValor2, inputValor3, inputValor4, inputValor5, inputValor6, inputValor7, inputValor8, inputValor10 As String
+    Dim inputValor1, inputValor2, inputValor3, inputValor4, inputValor5, inputValor6, inputValor7, inputValor8, inputValor9, inputValor10 As String
     Dim ValorModificar As String
     Dim translateVarModificarorAfegir As String
     Dim LabelValue As String
-    Dim inputValor11, inputValor9 As Integer
+    Dim inputValor11 As Integer
     Private Sub Administracio_Empreses_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If LabelValue = "Modificar" Then
             Label11.Text = "Modificar Empresa"
@@ -69,38 +69,17 @@ Public Class Administracio_Empreses
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         '_________________________________________________________
-        'Administracio.Empresa_recaregaTableAdapter.Actualizar(TextBox1.Text, TextBox2.Text, TextBox3.Text, TextBox4.Text, TextBox5.Text, TextBox6.Text, TextBox7.Text, TextBox8.Text, TextBox9.Text, TextBox10.Text,inputValor11)
-        'Me.FormulaTableAdapter.UpdateQuery(formulaName, thisDate, activa, formulaId, formulaId)
-        Administracio.Empresa_recaregaTableAdapter.UpdateTest(inputValor1, inputValor2, inputValor3, inputValor4, inputValor5, inputValor6, inputValor7, inputValor8, inputValor9, inputValor10, inputValor11)
-        Me.Close()
+        Administracio.Empresa_recaregaTableAdapter.UpdateTest(TextBox1.Text, TextBox2.Text, TextBox3.Text, TextBox4.Text, TextBox5.Text, TextBox6.Text, TextBox7.Text, TextBox8.Text, TextBox9.Text, TextBox10.Text, inputValor11)
         Administracio.Empresa_recaregaTableAdapter.Fill(Administracio.CarburantDataSet.empresa_recarega)
         Administracio.DataGridView4.DataSource = Administracio.CarburantDataSet.empresa_recarega
+        Me.Close()
         '_________________________________________________________
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         '_________________________________________________________
-
-        inputValor1 = TextBox1.Text
-        inputValor2 = TextBox2.Text
-        inputValor3 = TextBox3.Text
-        inputValor4 = TextBox4.Text
-        inputValor5 = TextBox5.Text
-        inputValor6 = TextBox6.Text
-        inputValor7 = TextBox7.Text
-        inputValor8 = TextBox8.Text
-        'inputValor9 = CInt(TextBox9.Text)
-        inputValor10 = TextBox10.Text
-
-        Administracio.Empresa_recaregaTableAdapter.InsertTest(inputValor1, inputValor2, inputValor3, inputValor4, inputValor5, inputValor6, inputValor7, inputValor8, inputValor9, inputValor10)
-        'Administracio.Empresa_recaregaTableAdapter.Insert(TextBox1.Text, TextBox2.Text, TextBox3.Text, TextBox4.Text, TextBox5.Text, TextBox6.Text, TextBox7.Text, TextBox8.Text, TextBox9.Text, TextBox10.Text)
-        'Administracio.Empresa_recaregaTableAdapter.Fill(Administracio.CarburantDataSet.empresa_recarega)
-        'Administracio.Empresa_recaregaTableAdapter.InsertTest(inputValor1, inputValor2, inputValor3, inputValor4, inputValor5, inputValor6, inputValor7, inputValor8, inputValor9, inputValor10)
-        'Administracio.Empresa_recaregaTableAdapter.InsertTest(TextBox1.Text, TextBox2.Text, TextBox3.Text, TextBox4.Text, TextBox5.Text, TextBox6.Text, TextBox7.Text, TextBox8.Text, TextBox9.Text, TextBox10.Text)
-
-        Me.Close()
+        Administracio.Empresa_recaregaTableAdapter.Insert(TextBox1.Text, TextBox2.Text, TextBox3.Text, TextBox4.Text, TextBox5.Text, TextBox6.Text, TextBox7.Text, TextBox8.Text, TextBox9.Text, TextBox10.Text)
         Administracio.Empresa_recaregaTableAdapter.Fill(Administracio.CarburantDataSet.empresa_recarega)
-        Administracio.DataGridView4.DataSource = Administracio.CarburantDataSet.empresa_recarega
         '_________________________________________________________
     End Sub
 

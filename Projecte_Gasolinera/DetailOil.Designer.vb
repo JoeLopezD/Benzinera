@@ -22,8 +22,8 @@ Partial Class DetailOil
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DetailOil))
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -43,19 +43,11 @@ Partial Class DetailOil
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Button14 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.MyVerticalProgessBar1 = New Projecte_Gasolinera.MyVerticalProgessBar()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(215, 448)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(142, 81)
-        Me.Button1.TabIndex = 27
-        Me.Button1.Text = "Recaregar"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -263,10 +255,9 @@ Partial Class DetailOil
         '
         'PictureBox6
         '
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(215, 357)
+        Me.PictureBox6.Location = New System.Drawing.Point(203, 359)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(142, 77)
+        Me.PictureBox6.Size = New System.Drawing.Size(154, 77)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox6.TabIndex = 49
         Me.PictureBox6.TabStop = False
@@ -293,6 +284,16 @@ Partial Class DetailOil
         Me.Label1.TabIndex = 52
         Me.Label1.Text = "Label1"
         Me.Label1.Visible = False
+        '
+        'ImageList1
+        '
+        Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImageList1.Images.SetKeyName(0, "descarga.jpg")
+        Me.ImageList1.Images.SetKeyName(1, "Diesel+.png")
+        Me.ImageList1.Images.SetKeyName(2, "imageGasolina95.jpeg")
+        Me.ImageList1.Images.SetKeyName(3, "imageGasolina98.jpeg")
+        Me.ImageList1.Images.SetKeyName(4, "imagesDiesel10plus.png")
         '
         'MyVerticalProgessBar1
         '
@@ -326,7 +327,6 @@ Partial Class DetailOil
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "DetailOil"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -338,8 +338,6 @@ Partial Class DetailOil
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Button1 As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
@@ -360,4 +358,5 @@ Partial Class DetailOil
     Friend WithEvents MyVerticalProgessBar1 As MyVerticalProgessBar
     Friend WithEvents Button14 As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents ImageList1 As ImageList
 End Class
