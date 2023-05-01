@@ -71,6 +71,10 @@ Partial Class Administracio
         Me.DatavendaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.VendaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.DataGridView5 = New System.Windows.Forms.DataGridView()
@@ -98,10 +102,6 @@ Partial Class Administracio
         Me.DipositBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.ComandaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ComandaTableAdapter = New Projecte_Gasolinera.carburantDataSetTableAdapters.comandaTableAdapter()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -517,6 +517,40 @@ Partial Class Administracio
         Me.TabPage4.Text = "Gestió Diposit"
         Me.TabPage4.UseVisualStyleBackColor = True
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(720, 221)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(92, 13)
+        Me.Label2.TabIndex = 16
+        Me.Label2.Text = "*Selecciona la ID "
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(764, 286)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(29, 13)
+        Me.Label1.TabIndex = 15
+        Me.Label1.Text = "Preu"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(791, 328)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 14
+        Me.Button1.Text = "Modificar"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(767, 302)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(121, 20)
+        Me.TextBox1.TabIndex = 13
+        '
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
@@ -683,40 +717,6 @@ Partial Class Administracio
         'ComandaTableAdapter
         '
         Me.ComandaTableAdapter.ClearBeforeFill = True
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(767, 302)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(121, 20)
-        Me.TextBox1.TabIndex = 13
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(791, 328)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 14
-        Me.Button1.Text = "Modificar"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(764, 286)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(29, 13)
-        Me.Label1.TabIndex = 15
-        Me.Label1.Text = "Preu"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(720, 221)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(92, 13)
-        Me.Label2.TabIndex = 16
-        Me.Label2.Text = "*Selecciona la ID "
         '
         'Administracio
         '

@@ -10,6 +10,9 @@
         Me.Login_clientTableAdapter.Fill(Me.CarburantDataSet.login_client)
         Me.Login_adminTableAdapter.Fill(Me.CarburantDataSet.login_admin)
 
+        Label1.Visible = False
+        TextBox1.Visible = False
+        Button1.Visible = False
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
@@ -41,11 +44,22 @@
         ElseIf translateVarModificarorAfegir = "no"
             LabelValue = "Afegir"
             Administracio_Empreses.TranslateVarFunction(LabelValue)
-
             'Administracio_Empreses.Show()
         End If
 
         Return LabelValue
     End Function
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        Label1.Visible = True
+        TextBox1.Visible = True
+        Button1.Visible = True
+        Dim empresaId = ComboBox2.SelectedValue.ToString
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+    End Sub
 
 End Class
