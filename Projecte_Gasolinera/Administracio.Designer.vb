@@ -553,11 +553,14 @@ Partial Class Administracio
         '
         'ComboBox2
         '
+        Me.ComboBox2.DataSource = Me.DipositBindingSource
+        Me.ComboBox2.DisplayMember = "nom_carburant"
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Location = New System.Drawing.Point(720, 193)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox2.TabIndex = 12
+        Me.ComboBox2.ValueMember = "diposit_id"
         '
         'Button11
         '

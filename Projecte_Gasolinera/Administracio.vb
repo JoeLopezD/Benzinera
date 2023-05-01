@@ -59,6 +59,10 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim depositId = ComboBox2.SelectedValue
+        Me.DipositTableAdapter.UpdateDiposit(TextBox1.Text, depositId)
+        Me.DipositTableAdapter.Fill(Me.CarburantDataSet.diposit)
+        Me.DataGridView5.DataSource = Me.CarburantDataSet.diposit
 
     End Sub
 
