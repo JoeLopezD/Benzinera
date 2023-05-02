@@ -20,12 +20,15 @@ Public Class Pagament
         Label7.Text = Label7.Tag
         Label8.Text = Label8.Tag
         inputValor = Label11.Tag
+        Label14.Visible = False
+        If Label7.Text = "Electric" Then
+            RadioButton4.Visible = False
+            Label1.Text = "KWh"
+        End If
         If Label9.Tag = "litres" Then
             RadioButton4.Checked = True
             totalLitres = inputValor
             preuCombustible = totalLitres * Label8.Tag
-
-
         Else
             RadioButton2.Checked = True
             preuCombustible = inputValor
@@ -34,12 +37,11 @@ Public Class Pagament
 
         Dim dosDigitsPreu = preuCombustible
         Dim roundedNumPreu As Double = Math.Round(dosDigitsPreu, 2, MidpointRounding.ToEven)
-        Label10.Text = roundedNumPreu
+        Label10.Text = roundedNumPreu & " €"
 
         Dim num As Double = totalLitres
         Dim roundedNum As Double = Math.Round(num, 2, MidpointRounding.ToEven)
         Label12.Text = roundedNum
-
     End Sub
 
     Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
@@ -55,14 +57,17 @@ Public Class Pagament
         clientCVV = TextBox3.Text
 
         If TextBox2.TextLength <> 16 Then
+            Label14.Visible = True
             Label14.Text = ""
             Label14.Text = "El Nº de la tarjeta no es correcte"
         End If
         If TextBox3.TextLength <> 3 Then
+            Label14.Visible = True
             Label14.Text = ""
             Label14.Text = "El Nº del Codi CVV no es correcte"
         End If
         If TextBox5.TextLength <> 4 Then
+            Label14.Visible = True
             Label14.Text = ""
             Label14.Text = "El Nº secret no es correcte"
         End If

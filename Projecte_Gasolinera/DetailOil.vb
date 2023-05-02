@@ -76,6 +76,7 @@ Public Class DetailOil
         ElseIf typeOfOil = "dieselPlus"
             PictureBox5.Visible = True
         ElseIf typeOfOil = "Electric"
+            RadioButton2.Visible = False
             PictureBox6.Visible = True
         End If
     End Sub
