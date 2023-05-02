@@ -12,6 +12,8 @@ Public Class Pagament
 
     Dim totalLitres As Double
     Dim preuCombustible As Double
+
+
     Dim totalActual As Double
     Private Sub Pagament_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DetailOil.Enabled = True
@@ -49,26 +51,20 @@ Public Class Pagament
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        clientName = TextBox1.Text
         clientCardCNumber = TextBox2.Text
-        clientExpDate = TextBox4.Text
         clientCVV = TextBox3.Text
 
-        If TextBox2.TextLength < 16 Then
+        If TextBox2.TextLength <> 16 Then
             Label14.Text = ""
             Label14.Text = "El Nº de la tarjeta no es correcte"
         End If
-        If TextBox3.TextLength < 3 Then
+        If TextBox3.TextLength <> 3 Then
             Label14.Text = ""
             Label14.Text = "El Nº del Codi CVV no es correcte"
         End If
-        If TextBox1.Text = "" Then
+        If TextBox5.TextLength <> 4 Then
             Label14.Text = ""
-            Label14.Text = "El Nom no es correcte"
-        End If
-        If TextBox4.Text = "" Then
-            Label14.Text = ""
-            Label14.Text = "La Data no es correcta"
+            Label14.Text = "El Nº secret no es correcte"
         End If
         If TextBox2.TextLength = 16 And TextBox3.TextLength = 3 Then
             Dim cn As New SqlConnection
@@ -86,6 +82,7 @@ Public Class Pagament
                     varDipositId = ds.Tables("Dades").Rows(i).Item(0)
                     Form2.VendaTableAdapter.Insert(varDipositId, TextBox2.Text, Label12.Text, Label10.Text, True, Today)
                     Form2.VendaTableAdapter.Fill(Form2.CarburantDataSet.venda)
+                    ConfirmarCompra.Show()
                     '_________________________________________________________
                     Close()
                 End If

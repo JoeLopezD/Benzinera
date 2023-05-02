@@ -79,4 +79,8 @@ Public Class Login
         Hide()
     End Sub
 
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+        Close()
+        Form1.Show()
+    End Sub
 End Class

@@ -8,45 +8,45 @@ Public Class DetailOil
 
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
         Dim texto As String
-        texto = TextBox3.Text.Trim() 'eliminar espacios en blanco al principio y al final del texto
+        texto = TextBox3.Text.Trim()
 
-        If texto.EndsWith(",") Or Val(texto) = 0 Then 'verificar si el texto termina en "," o su valor total es 0
+        If texto.EndsWith(",") Or Val(texto) = 0 Then
             MsgBox("Sius plau, introdueix un valor valid o que no acabi amb ','")
         Else
-            'el texto no termina en "," y su valor total no es 0, ahora se verifica que no tenga como valor total solo ceros.
-            Dim valorNumerico As Double = Val(texto)
-            If Not (texto Like "0*") Then
+            If texto <= 20000 Then
+                Dim valorNumerico As Double = Val(texto)
+                If Not (texto Like "0*") Then
 
+                    Dim cn As New SqlConnection
+                    cn.ConnectionString = conexion
 
-
-                Dim cn As New SqlConnection
-                cn.ConnectionString = conexion
-
-                Dim ds As New DataSet
-                Dim adaptador As New SqlDataAdapter("Select euros, nom_carburant from diposit", cn)
-                adaptador.Fill(ds, "dades")
-                For i As Integer = 0 To ds.Tables("dades").Rows.Count - 1
-                    If ds.Tables("Dades").Rows(i).Item(1).Equals(typeOfOil) Then
-                        Pagament.Label7.Tag = ds.Tables("Dades").Rows(i).Item(1)
-                        Pagament.Label8.Tag = ds.Tables("Dades").Rows(i).Item(0)
-                        If RadioButton1.Checked = True Then
-                            Pagament.Label9.Tag = "euros"
-                        Else
-                            Pagament.Label9.Tag = "litres"
+                    Dim ds As New DataSet
+                    Dim adaptador As New SqlDataAdapter("Select euros, nom_carburant from diposit", cn)
+                    adaptador.Fill(ds, "dades")
+                    For i As Integer = 0 To ds.Tables("dades").Rows.Count - 1
+                        If ds.Tables("Dades").Rows(i).Item(1).Equals(typeOfOil) Then
+                            Pagament.Label7.Tag = ds.Tables("Dades").Rows(i).Item(1)
+                            Pagament.Label8.Tag = ds.Tables("Dades").Rows(i).Item(0)
+                            If RadioButton1.Checked = True Then
+                                Pagament.Label9.Tag = "euros"
+                            Else
+                                Pagament.Label9.Tag = "litres"
+                            End If
+                            inputValor = TextBox3.Text
+                            Pagament.Label11.Tag = Mid(inputValor, 1, Len(inputValor) - 1)
+                            Pagament.Show()
+                            Close()
                         End If
-                        inputValor = TextBox3.Text
-                        Pagament.Label11.Tag = Mid(inputValor, 1, Len(inputValor) - 1)
-                        Pagament.Show()
-                        Close()
-                    End If
-                Next
+                    Next
+                End If
             End If
         End If
     End Sub
 
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
-        Gasolinera.Show()
-        Close()
+        'Gasolinera.Show()
+        'Close()
+        TextBox3.Text = "0" + finalCharacter
     End Sub
 
     Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
@@ -69,20 +69,12 @@ Public Class DetailOil
 
         If typeOfOil = "95" Then
             PictureBox2.Visible = True
-            ' PictureBox6.BackgroundImageLayout = ImageLayout.Stretch
         ElseIf typeOfOil = "98"
             PictureBox3.Visible = True
-            ' PictureBox6.BackgroundImageLayout = ImageLayout.Stretch
         ElseIf typeOfOil = "diesel"
             PictureBox4.Visible = True
-
-            'PictureBox6.BackgroundImage = ImageList1.Images.Item(3)
-            'PictureBox6.BackgroundImageLayout = ImageLayout.Stretch
         ElseIf typeOfOil = "dieselPlus"
             PictureBox5.Visible = True
-
-            'PictureBox6.BackgroundImage = ImageList1.Images.Item(4)
-            'PictureBox6.BackgroundImageLayout = ImageLayout.Stretch
         ElseIf typeOfOil = "Electric"
             PictureBox6.Visible = True
         End If

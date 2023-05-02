@@ -66,4 +66,17 @@
 
     End Sub
 
+    'Private Sub TabPage6_Click(sender As Object, e As EventArgs) Handles TabPage6.Click
+    '    Close()
+    '    Form1.Show()
+    'End Sub
+
+    Private Sub TabControl1_Click(sender As Object, e As EventArgs) Handles TabControl1.Click
+        If TabControl1.SelectedIndex = 5 Then
+            Close()
+            Form1.Show()
+            Login.TextBox1.Text = ""
+            Login.TextBox2.Text = ""
+        End If
+    End Sub
 End Class

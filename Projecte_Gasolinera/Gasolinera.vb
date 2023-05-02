@@ -4,7 +4,7 @@ Imports System.Text
 
 Public Class Gasolinera
 
-    Private conexion As String = "Data Source=DESKTOP-4GK2TOH\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
+    Private conexion As String = "Data Source=DESKTOP-TPUG9J9\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
     Dim varBBDDTypeOilReturn As String
     Dim emailorpassword As String
 
@@ -12,11 +12,11 @@ Public Class Gasolinera
     Dim buttonClicResult As Integer
     Dim typeOfOil As String
 
-    Private Sub RegistrarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistrarToolStripMenuItem.Click
-        Registre_admin.Show()
-        adminTrue = "no"
-        Registre_admin.TranslateVarFunction(adminTrue)
-    End Sub
+    'Private Sub RegistrarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistrarToolStripMenuItem.Click
+    '    Registre_admin.Show()
+    '    adminTrue = "no"
+    '    Registre_admin.TranslateVarFunction(adminTrue)
+    'End Sub
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click, Button2.Click, Button3.Click, Button4.Click, Button5.Click
@@ -63,7 +63,4 @@ Public Class Gasolinera
 
     End Sub
 
-    Private Sub Gasolinera_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class
