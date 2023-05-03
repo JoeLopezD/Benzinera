@@ -13,6 +13,9 @@ Public Class DetailOil
         If texto.EndsWith(",") Or Val(texto) = 0 Then
             MsgBox("Sius plau, introdueix un valor valid o que no acabi amb ','")
         Else
+            If texto.EndsWith("L") Then
+                texto = texto.Substring(0, texto.Length - 1)
+            End If
             If texto <= 20000 Then
                 Dim valorNumerico As Double = Val(texto)
                 If Not (texto Like "0*") Then

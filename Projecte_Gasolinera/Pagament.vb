@@ -82,6 +82,11 @@ Public Class Pagament
                     totalActual = ds.Tables("Dades").Rows(i).Item(1)
                     totalActual = totalActual - Label12.Text
                     Form2.DipositTableAdapter.UpdateQuery(totalActual, Label7.Text)
+
+                    If totalActual <= 2000 Then
+                        MessageBox.Show("Se ha autorrellenado el diposito por un bajo nivel de reserva.")
+                    End If
+
                     '_________________________________________________________
                     Dim varDipositId As Integer
                     varDipositId = ds.Tables("Dades").Rows(i).Item(0)
