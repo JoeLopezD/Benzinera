@@ -30,7 +30,6 @@ Partial Class Administracio
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.LoginadminidDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EmailDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ContraseñaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.RolDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.LoginadminBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.CarburantDataSet = New Projecte_Gasolinera.carburantDataSet()
@@ -38,7 +37,6 @@ Partial Class Administracio
         Me.DataGridView3 = New System.Windows.Forms.DataGridView()
         Me.LoginclientidDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DniDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ContraseñaDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.LoginclientBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
@@ -150,7 +148,7 @@ Partial Class Administracio
         Me.TabPage1.Controls.Add(Me.GroupBox2)
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage1.Size = New System.Drawing.Size(976, 488)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Gestió Client"
@@ -160,9 +158,9 @@ Partial Class Administracio
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.Control
         Me.GroupBox1.Controls.Add(Me.DataGridView2)
-        Me.GroupBox1.Location = New System.Drawing.Point(-20, 3)
+        Me.GroupBox1.Location = New System.Drawing.Point(3, 3)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(587, 505)
+        Me.GroupBox1.Size = New System.Drawing.Size(548, 505)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Administració Gerent"
@@ -171,13 +169,13 @@ Partial Class Administracio
         '
         Me.DataGridView2.AutoGenerateColumns = False
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.LoginadminidDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn, Me.ContraseñaDataGridViewTextBoxColumn, Me.RolDataGridViewTextBoxColumn})
+        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.LoginadminidDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn, Me.RolDataGridViewTextBoxColumn})
         Me.DataGridView2.DataSource = Me.LoginadminBindingSource
-        Me.DataGridView2.Location = New System.Drawing.Point(51, 30)
-        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView2.Location = New System.Drawing.Point(68, 30)
+        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.RowTemplate.Height = 24
-        Me.DataGridView2.Size = New System.Drawing.Size(444, 437)
+        Me.DataGridView2.Size = New System.Drawing.Size(341, 437)
         Me.DataGridView2.TabIndex = 1
         '
         'LoginadminidDataGridViewTextBoxColumn
@@ -192,12 +190,6 @@ Partial Class Administracio
         Me.EmailDataGridViewTextBoxColumn.DataPropertyName = "email"
         Me.EmailDataGridViewTextBoxColumn.HeaderText = "email"
         Me.EmailDataGridViewTextBoxColumn.Name = "EmailDataGridViewTextBoxColumn"
-        '
-        'ContraseñaDataGridViewTextBoxColumn
-        '
-        Me.ContraseñaDataGridViewTextBoxColumn.DataPropertyName = "contraseña"
-        Me.ContraseñaDataGridViewTextBoxColumn.HeaderText = "contraseña"
-        Me.ContraseñaDataGridViewTextBoxColumn.Name = "ContraseñaDataGridViewTextBoxColumn"
         '
         'RolDataGridViewTextBoxColumn
         '
@@ -219,7 +211,7 @@ Partial Class Administracio
         '
         Me.GroupBox2.BackColor = System.Drawing.SystemColors.Control
         Me.GroupBox2.Controls.Add(Me.DataGridView3)
-        Me.GroupBox2.Location = New System.Drawing.Point(566, 3)
+        Me.GroupBox2.Location = New System.Drawing.Point(551, 0)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(429, 497)
         Me.GroupBox2.TabIndex = 1
@@ -230,13 +222,13 @@ Partial Class Administracio
         '
         Me.DataGridView3.AutoGenerateColumns = False
         Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.LoginclientidDataGridViewTextBoxColumn, Me.DniDataGridViewTextBoxColumn, Me.ContraseñaDataGridViewTextBoxColumn1})
+        Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.LoginclientidDataGridViewTextBoxColumn, Me.DniDataGridViewTextBoxColumn})
         Me.DataGridView3.DataSource = Me.LoginclientBindingSource
-        Me.DataGridView3.Location = New System.Drawing.Point(52, 30)
-        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView3.Location = New System.Drawing.Point(108, 33)
+        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView3.Name = "DataGridView3"
         Me.DataGridView3.RowTemplate.Height = 24
-        Me.DataGridView3.Size = New System.Drawing.Size(345, 437)
+        Me.DataGridView3.Size = New System.Drawing.Size(245, 437)
         Me.DataGridView3.TabIndex = 2
         '
         'LoginclientidDataGridViewTextBoxColumn
@@ -251,12 +243,6 @@ Partial Class Administracio
         Me.DniDataGridViewTextBoxColumn.DataPropertyName = "dni"
         Me.DniDataGridViewTextBoxColumn.HeaderText = "dni"
         Me.DniDataGridViewTextBoxColumn.Name = "DniDataGridViewTextBoxColumn"
-        '
-        'ContraseñaDataGridViewTextBoxColumn1
-        '
-        Me.ContraseñaDataGridViewTextBoxColumn1.DataPropertyName = "contraseña"
-        Me.ContraseñaDataGridViewTextBoxColumn1.HeaderText = "contraseña"
-        Me.ContraseñaDataGridViewTextBoxColumn1.Name = "ContraseñaDataGridViewTextBoxColumn1"
         '
         'LoginclientBindingSource
         '
@@ -275,7 +261,7 @@ Partial Class Administracio
         Me.TabPage2.Controls.Add(Me.DataGridView4)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage2.Size = New System.Drawing.Size(976, 488)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Gestió Espreses"
@@ -358,7 +344,7 @@ Partial Class Administracio
         Me.DataGridView4.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EmpresaidDataGridViewTextBoxColumn, Me.NomDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn1, Me.TelefDataGridViewTextBoxColumn, Me.AdreçaDataGridViewTextBoxColumn, Me.CpDataGridViewTextBoxColumn, Me.MunicipiDataGridViewTextBoxColumn, Me.ComarcaDataGridViewTextBoxColumn, Me.ProvinciaDataGridViewTextBoxColumn, Me.ComunitatDataGridViewTextBoxColumn, Me.PaisDataGridViewTextBoxColumn})
         Me.DataGridView4.DataSource = Me.EmpresarecaregaBindingSource
         Me.DataGridView4.Location = New System.Drawing.Point(0, 0)
-        Me.DataGridView4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView4.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView4.Name = "DataGridView4"
         Me.DataGridView4.RowTemplate.Height = 24
         Me.DataGridView4.Size = New System.Drawing.Size(988, 359)
@@ -436,7 +422,7 @@ Partial Class Administracio
         Me.TabPage3.Controls.Add(Me.DataGridView1)
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage3.Size = New System.Drawing.Size(976, 488)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Gestió Ventes"
@@ -449,7 +435,7 @@ Partial Class Administracio
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.VendaidDataGridViewTextBoxColumn, Me.DipositidDataGridViewTextBoxColumn, Me.TargetaDataGridViewTextBoxColumn, Me.CapacitatDataGridViewTextBoxColumn, Me.EurosDataGridViewTextBoxColumn, Me.PagatDataGridViewCheckBoxColumn, Me.DatavendaDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.VendaBindingSource
         Me.DataGridView1.Location = New System.Drawing.Point(2, 2)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.Size = New System.Drawing.Size(745, 498)
@@ -514,7 +500,7 @@ Partial Class Administracio
         Me.TabPage4.Controls.Add(Me.DataGridView5)
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage4.Size = New System.Drawing.Size(976, 488)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Gestió Diposit"
@@ -637,7 +623,7 @@ Partial Class Administracio
         Me.TabPage5.Controls.Add(Me.DataGridView6)
         Me.TabPage5.Location = New System.Drawing.Point(4, 22)
         Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage5.Size = New System.Drawing.Size(976, 488)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "Gestió Comandes"
@@ -693,9 +679,9 @@ Partial Class Administracio
         'TabPage6
         '
         Me.TabPage6.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPage6.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPage6.Padding = New System.Windows.Forms.Padding(2)
         Me.TabPage6.Size = New System.Drawing.Size(976, 488)
         Me.TabPage6.TabIndex = 5
         Me.TabPage6.Text = "Logout"
@@ -788,16 +774,9 @@ Partial Class Administracio
     Friend WithEvents CarburantDataSet As carburantDataSet
     Friend WithEvents LoginadminBindingSource As BindingSource
     Friend WithEvents Login_adminTableAdapter As carburantDataSetTableAdapters.login_adminTableAdapter
-    Friend WithEvents LoginadminidDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents EmailDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents ContraseñaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents RolDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents LoginclientBindingSource As BindingSource
     Friend WithEvents Login_clientTableAdapter As carburantDataSetTableAdapters.login_clientTableAdapter
     Friend WithEvents DataGridView3 As DataGridView
-    Friend WithEvents LoginclientidDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents DniDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents ContraseñaDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents EmpresarecaregaBindingSource As BindingSource
     Friend WithEvents Empresa_recaregaTableAdapter As carburantDataSetTableAdapters.empresa_recaregaTableAdapter
     Friend WithEvents Button5 As Button
@@ -856,4 +835,9 @@ Partial Class Administracio
     Friend WithEvents Button1 As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TabPage6 As TabPage
+    Friend WithEvents LoginadminidDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents EmailDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents RolDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents LoginclientidDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents DniDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
 End Class

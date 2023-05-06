@@ -17,7 +17,7 @@ Public Class Registre_admin
             emailorpassword = "email"
         ElseIf translateVar = "no"
             varBBDD = "login_client"
-            emailorpassword = "dni"
+            emailorpassword = "DNI"
         End If
 
         Return varBBDD
@@ -40,15 +40,17 @@ Public Class Registre_admin
             If varBBDD = "login_admin" Then
                 Form2.Login_adminTableAdapter.Insert(TextBox1.Text, zx, "admin")
                 Form2.Login_adminTableAdapter.Fill(Form2.CarburantDataSet.login_admin)
+                Close()
             ElseIf varBBDD = "login_client"
                 Form2.Login_clientTableAdapter.Insert(TextBox1.Text, zx)
                 Form2.Login_clientTableAdapter.Fill(Form2.CarburantDataSet.login_client)
+                Close()
             End If
 
         End Using
     End Sub
 
     Private Sub Registre_admin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Label1.Text = emailorpassword
     End Sub
 End Class

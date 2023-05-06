@@ -61,7 +61,7 @@ Partial Class EsClient
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(49, 13)
         Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Cancelar"
+        Me.Label2.Text = "Registrar"
         '
         'EsClient
         '

@@ -32,4 +32,11 @@ Public Class EsClient
     Private Sub EsClient_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+        Dim esClient As String = "no"
+        Registre_admin.TranslateVarFunction(esClient)
+        Registre_admin.Show()
+        Close()
+    End Sub
 End Class

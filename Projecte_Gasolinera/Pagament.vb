@@ -2,7 +2,7 @@
 Imports System.Security.Cryptography
 Imports System.Text
 Public Class Pagament
-    Private conexion As String = "Data Source=DESKTOP-4GK2TOH\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
+    Private conexion As String = "Data Source=DESKTOP-TPUG9J9\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
     Dim clientCVV, clientCardCNumber, clientName, clientExpDate, typeOfOil As String
     Dim inputValor As String
 
