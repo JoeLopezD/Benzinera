@@ -23,6 +23,7 @@ Public Class EsClient
                 Dim dosDigitsPreu = roundedEuros
                 Dim roundedNumPreu As Double = Math.Round(dosDigitsPreu, 2, MidpointRounding.ToEven)
                 Pagament.Label10.Text = roundedNumPreu
+                Pagament.Label16.Enabled = False
                 Close()
             End If
         Next

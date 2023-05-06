@@ -76,7 +76,8 @@ Partial Class EsClient
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "EsClient"
-        Me.Text = "EsClient"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "EtsClient"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
