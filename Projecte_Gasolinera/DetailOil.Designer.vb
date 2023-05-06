@@ -387,6 +387,7 @@ Partial Class DetailOil
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "DetailOil"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

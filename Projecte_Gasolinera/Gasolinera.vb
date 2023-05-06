@@ -63,4 +63,7 @@ Public Class Gasolinera
 
     End Sub
 
+    Private Sub InfoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InfoToolStripMenuItem.Click
+        AboutBox1.Show()
+    End Sub
 End Class

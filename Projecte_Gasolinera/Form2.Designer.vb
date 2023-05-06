@@ -23,6 +23,7 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.LoginadminidDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EmailDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -69,11 +70,11 @@ Partial Class Form2
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.LoginadminidDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn, Me.ContraseñaDataGridViewTextBoxColumn, Me.RolDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.LoginadminBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(137, 86)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DataGridView1.Location = New System.Drawing.Point(103, 70)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(443, 150)
+        Me.DataGridView1.Size = New System.Drawing.Size(332, 122)
         Me.DataGridView1.TabIndex = 0
         '
         'LoginadminidDataGridViewTextBoxColumn
@@ -117,10 +118,9 @@ Partial Class Form2
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.LoginclientidDataGridViewTextBoxColumn, Me.DniDataGridViewTextBoxColumn, Me.ContraseñaDataGridViewTextBoxColumn1})
         Me.DataGridView2.DataSource = Me.LoginclientBindingSource
-        Me.DataGridView2.Location = New System.Drawing.Point(137, 257)
-        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView2.Location = New System.Drawing.Point(103, 209)
         Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.Size = New System.Drawing.Size(443, 159)
+        Me.DataGridView2.Size = New System.Drawing.Size(332, 129)
         Me.DataGridView2.TabIndex = 2
         '
         'LoginclientidDataGridViewTextBoxColumn
@@ -153,10 +153,9 @@ Partial Class Form2
         Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.VendaidDataGridViewTextBoxColumn, Me.DipositidDataGridViewTextBoxColumn, Me.TargetaDataGridViewTextBoxColumn, Me.CapacitatDataGridViewTextBoxColumn, Me.EurosDataGridViewTextBoxColumn, Me.PagatDataGridViewCheckBoxColumn, Me.DatavendaDataGridViewTextBoxColumn})
         Me.DataGridView3.DataSource = Me.VendaBindingSource
-        Me.DataGridView3.Location = New System.Drawing.Point(631, 86)
-        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView3.Location = New System.Drawing.Point(473, 70)
         Me.DataGridView3.Name = "DataGridView3"
-        Me.DataGridView3.Size = New System.Drawing.Size(443, 150)
+        Me.DataGridView3.Size = New System.Drawing.Size(332, 122)
         Me.DataGridView3.TabIndex = 3
         '
         'VendaidDataGridViewTextBoxColumn
@@ -225,10 +224,9 @@ Partial Class Form2
         Me.DataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView4.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn5})
         Me.DataGridView4.DataSource = Me.DipositBindingSource
-        Me.DataGridView4.Location = New System.Drawing.Point(631, 266)
-        Me.DataGridView4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView4.Location = New System.Drawing.Point(473, 216)
         Me.DataGridView4.Name = "DataGridView4"
-        Me.DataGridView4.Size = New System.Drawing.Size(443, 150)
+        Me.DataGridView4.Size = New System.Drawing.Size(332, 122)
         Me.DataGridView4.TabIndex = 4
         '
         'DataGridViewTextBoxColumn2
@@ -255,15 +253,16 @@ Partial Class Form2
         '
         'Form2
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1189, 626)
+        Me.ClientSize = New System.Drawing.Size(892, 509)
         Me.Controls.Add(Me.DataGridView4)
         Me.Controls.Add(Me.DataGridView3)
         Me.Controls.Add(Me.DataGridView2)
         Me.Controls.Add(Me.DataGridView1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.MaximizeBox = False
         Me.Name = "Form2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

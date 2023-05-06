@@ -23,6 +23,7 @@ Partial Class Administracio
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Administracio))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -137,22 +138,20 @@ Partial Class Administracio
         Me.TabControl1.Controls.Add(Me.TabPage4)
         Me.TabControl1.Controls.Add(Me.TabPage5)
         Me.TabControl1.Controls.Add(Me.TabPage6)
-        Me.TabControl1.Location = New System.Drawing.Point(23, 2)
-        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabControl1.Location = New System.Drawing.Point(17, 2)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1312, 632)
+        Me.TabControl1.Size = New System.Drawing.Size(984, 514)
         Me.TabControl1.TabIndex = 0
         '
         'TabPage1
         '
         Me.TabPage1.Controls.Add(Me.GroupBox1)
         Me.TabPage1.Controls.Add(Me.GroupBox2)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4)
-        Me.TabPage1.Size = New System.Drawing.Size(1304, 603)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.TabPage1.Size = New System.Drawing.Size(976, 488)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Gestió Client"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -161,11 +160,9 @@ Partial Class Administracio
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.Control
         Me.GroupBox1.Controls.Add(Me.DataGridView2)
-        Me.GroupBox1.Location = New System.Drawing.Point(-26, 4)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Location = New System.Drawing.Point(-20, 3)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox1.Size = New System.Drawing.Size(783, 622)
+        Me.GroupBox1.Size = New System.Drawing.Size(587, 505)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Administració Gerent"
@@ -176,11 +173,11 @@ Partial Class Administracio
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.LoginadminidDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn, Me.ContraseñaDataGridViewTextBoxColumn, Me.RolDataGridViewTextBoxColumn})
         Me.DataGridView2.DataSource = Me.LoginadminBindingSource
-        Me.DataGridView2.Location = New System.Drawing.Point(68, 37)
-        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DataGridView2.Location = New System.Drawing.Point(51, 30)
+        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.RowTemplate.Height = 24
-        Me.DataGridView2.Size = New System.Drawing.Size(592, 538)
+        Me.DataGridView2.Size = New System.Drawing.Size(444, 437)
         Me.DataGridView2.TabIndex = 1
         '
         'LoginadminidDataGridViewTextBoxColumn
@@ -222,11 +219,9 @@ Partial Class Administracio
         '
         Me.GroupBox2.BackColor = System.Drawing.SystemColors.Control
         Me.GroupBox2.Controls.Add(Me.DataGridView3)
-        Me.GroupBox2.Location = New System.Drawing.Point(755, 4)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox2.Location = New System.Drawing.Point(566, 3)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox2.Size = New System.Drawing.Size(572, 612)
+        Me.GroupBox2.Size = New System.Drawing.Size(429, 497)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Administració Client"
@@ -237,11 +232,11 @@ Partial Class Administracio
         Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.LoginclientidDataGridViewTextBoxColumn, Me.DniDataGridViewTextBoxColumn, Me.ContraseñaDataGridViewTextBoxColumn1})
         Me.DataGridView3.DataSource = Me.LoginclientBindingSource
-        Me.DataGridView3.Location = New System.Drawing.Point(69, 37)
-        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DataGridView3.Location = New System.Drawing.Point(52, 30)
+        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DataGridView3.Name = "DataGridView3"
         Me.DataGridView3.RowTemplate.Height = 24
-        Me.DataGridView3.Size = New System.Drawing.Size(460, 538)
+        Me.DataGridView3.Size = New System.Drawing.Size(345, 437)
         Me.DataGridView3.TabIndex = 2
         '
         'LoginclientidDataGridViewTextBoxColumn
@@ -278,11 +273,10 @@ Partial Class Administracio
         Me.TabPage2.Controls.Add(Me.Button4)
         Me.TabPage2.Controls.Add(Me.Button3)
         Me.TabPage2.Controls.Add(Me.DataGridView4)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4)
-        Me.TabPage2.Size = New System.Drawing.Size(1324, 618)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.TabPage2.Size = New System.Drawing.Size(976, 488)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Gestió Espreses"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -292,10 +286,9 @@ Partial Class Administracio
         Me.ComboBox1.DataSource = Me.EmpresarecaregaBindingSource
         Me.ComboBox1.DisplayMember = "nom"
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(215, 491)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.ComboBox1.Location = New System.Drawing.Point(161, 399)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(160, 24)
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox1.TabIndex = 10
         Me.ComboBox1.ValueMember = "empresa_id"
         '
@@ -306,60 +299,54 @@ Partial Class Administracio
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(492, 491)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button8.Location = New System.Drawing.Point(369, 399)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(100, 28)
+        Me.Button8.Size = New System.Drawing.Size(75, 23)
         Me.Button8.TabIndex = 9
         Me.Button8.Text = "Eliminar"
         Me.Button8.UseVisualStyleBackColor = True
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(384, 491)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button7.Location = New System.Drawing.Point(288, 399)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(100, 28)
+        Me.Button7.Size = New System.Drawing.Size(75, 23)
         Me.Button7.TabIndex = 8
         Me.Button7.Text = "Modificar"
         Me.Button7.UseVisualStyleBackColor = True
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(627, 491)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button6.Location = New System.Drawing.Point(470, 399)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(100, 28)
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
         Me.Button6.TabIndex = 7
         Me.Button6.Text = "Afegir"
         Me.Button6.UseVisualStyleBackColor = True
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(841, 615)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button5.Location = New System.Drawing.Point(631, 500)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(100, 28)
+        Me.Button5.Size = New System.Drawing.Size(75, 23)
         Me.Button5.TabIndex = 6
         Me.Button5.Text = "Button5"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(720, 615)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button4.Location = New System.Drawing.Point(540, 500)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(100, 28)
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 5
         Me.Button4.Text = "Button4"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(600, 615)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button3.Location = New System.Drawing.Point(450, 500)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(100, 28)
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 4
         Me.Button3.Text = "Button3"
         Me.Button3.UseVisualStyleBackColor = True
@@ -371,10 +358,10 @@ Partial Class Administracio
         Me.DataGridView4.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.EmpresaidDataGridViewTextBoxColumn, Me.NomDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn1, Me.TelefDataGridViewTextBoxColumn, Me.AdreçaDataGridViewTextBoxColumn, Me.CpDataGridViewTextBoxColumn, Me.MunicipiDataGridViewTextBoxColumn, Me.ComarcaDataGridViewTextBoxColumn, Me.ProvinciaDataGridViewTextBoxColumn, Me.ComunitatDataGridViewTextBoxColumn, Me.PaisDataGridViewTextBoxColumn})
         Me.DataGridView4.DataSource = Me.EmpresarecaregaBindingSource
         Me.DataGridView4.Location = New System.Drawing.Point(0, 0)
-        Me.DataGridView4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DataGridView4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DataGridView4.Name = "DataGridView4"
         Me.DataGridView4.RowTemplate.Height = 24
-        Me.DataGridView4.Size = New System.Drawing.Size(1317, 442)
+        Me.DataGridView4.Size = New System.Drawing.Size(988, 359)
         Me.DataGridView4.TabIndex = 3
         '
         'EmpresaidDataGridViewTextBoxColumn
@@ -447,11 +434,10 @@ Partial Class Administracio
         'TabPage3
         '
         Me.TabPage3.Controls.Add(Me.DataGridView1)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(4)
-        Me.TabPage3.Size = New System.Drawing.Size(1324, 618)
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.TabPage3.Size = New System.Drawing.Size(976, 488)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Gestió Ventes"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -462,11 +448,11 @@ Partial Class Administracio
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.VendaidDataGridViewTextBoxColumn, Me.DipositidDataGridViewTextBoxColumn, Me.TargetaDataGridViewTextBoxColumn, Me.CapacitatDataGridViewTextBoxColumn, Me.EurosDataGridViewTextBoxColumn, Me.PagatDataGridViewCheckBoxColumn, Me.DatavendaDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.VendaBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(3, 2)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DataGridView1.Location = New System.Drawing.Point(2, 2)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(993, 613)
+        Me.DataGridView1.Size = New System.Drawing.Size(745, 498)
         Me.DataGridView1.TabIndex = 1
         '
         'VendaidDataGridViewTextBoxColumn
@@ -526,11 +512,10 @@ Partial Class Administracio
         Me.TabPage4.Controls.Add(Me.ComboBox2)
         Me.TabPage4.Controls.Add(Me.Button11)
         Me.TabPage4.Controls.Add(Me.DataGridView5)
-        Me.TabPage4.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage4.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Padding = New System.Windows.Forms.Padding(4)
-        Me.TabPage4.Size = New System.Drawing.Size(1324, 618)
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.TabPage4.Size = New System.Drawing.Size(976, 488)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Gestió Diposit"
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -538,39 +523,35 @@ Partial Class Administracio
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(960, 272)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(720, 221)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(118, 17)
+        Me.Label2.Size = New System.Drawing.Size(92, 13)
         Me.Label2.TabIndex = 16
         Me.Label2.Text = "*Selecciona la ID "
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(1019, 352)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(764, 286)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(38, 17)
+        Me.Label1.Size = New System.Drawing.Size(29, 13)
         Me.Label1.TabIndex = 15
         Me.Label1.Text = "Preu"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(1055, 404)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Location = New System.Drawing.Point(791, 328)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(100, 28)
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 14
         Me.Button1.Text = "Modificar"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(1023, 372)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox1.Location = New System.Drawing.Point(767, 302)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(160, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(121, 20)
         Me.TextBox1.TabIndex = 13
         '
         'ComboBox2
@@ -578,10 +559,9 @@ Partial Class Administracio
         Me.ComboBox2.DataSource = Me.DipositBindingSource
         Me.ComboBox2.DisplayMember = "nom_carburant"
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(960, 238)
-        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.ComboBox2.Location = New System.Drawing.Point(720, 193)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(160, 24)
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox2.TabIndex = 12
         Me.ComboBox2.ValueMember = "diposit_id"
         '
@@ -592,10 +572,9 @@ Partial Class Administracio
         '
         'Button11
         '
-        Me.Button11.Location = New System.Drawing.Point(1129, 235)
-        Me.Button11.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button11.Location = New System.Drawing.Point(847, 191)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(100, 28)
+        Me.Button11.Size = New System.Drawing.Size(75, 23)
         Me.Button11.TabIndex = 10
         Me.Button11.Text = "Modificar"
         Me.Button11.UseVisualStyleBackColor = True
@@ -606,10 +585,9 @@ Partial Class Administracio
         Me.DataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView5.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DipositidDataGridViewTextBoxColumn1, Me.NomcarburantDataGridViewTextBoxColumn, Me.ActualDataGridViewTextBoxColumn, Me.MaximDataGridViewTextBoxColumn, Me.EurosDataGridViewTextBoxColumn1, Me.EmpresaidDataGridViewTextBoxColumn1})
         Me.DataGridView5.DataSource = Me.DipositBindingSource2
-        Me.DataGridView5.Location = New System.Drawing.Point(4, 4)
-        Me.DataGridView5.Margin = New System.Windows.Forms.Padding(4)
+        Me.DataGridView5.Location = New System.Drawing.Point(3, 3)
         Me.DataGridView5.Name = "DataGridView5"
-        Me.DataGridView5.Size = New System.Drawing.Size(859, 612)
+        Me.DataGridView5.Size = New System.Drawing.Size(644, 497)
         Me.DataGridView5.TabIndex = 3
         '
         'DipositidDataGridViewTextBoxColumn1
@@ -657,11 +635,10 @@ Partial Class Administracio
         'TabPage5
         '
         Me.TabPage5.Controls.Add(Me.DataGridView6)
-        Me.TabPage5.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage5.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPage5.Location = New System.Drawing.Point(4, 22)
         Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Padding = New System.Windows.Forms.Padding(4)
-        Me.TabPage5.Size = New System.Drawing.Size(1324, 618)
+        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.TabPage5.Size = New System.Drawing.Size(976, 488)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "Gestió Comandes"
         Me.TabPage5.UseVisualStyleBackColor = True
@@ -672,10 +649,9 @@ Partial Class Administracio
         Me.DataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView6.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ComandaidDataGridViewTextBoxColumn, Me.EmpresaidDataGridViewTextBoxColumn2, Me.DipositidDataGridViewTextBoxColumn2, Me.LitresDataGridViewTextBoxColumn, Me.DataenviatDataGridViewTextBoxColumn})
         Me.DataGridView6.DataSource = Me.ComandaBindingSource1
-        Me.DataGridView6.Location = New System.Drawing.Point(0, 4)
-        Me.DataGridView6.Margin = New System.Windows.Forms.Padding(4)
+        Me.DataGridView6.Location = New System.Drawing.Point(0, 3)
         Me.DataGridView6.Name = "DataGridView6"
-        Me.DataGridView6.Size = New System.Drawing.Size(725, 612)
+        Me.DataGridView6.Size = New System.Drawing.Size(544, 497)
         Me.DataGridView6.TabIndex = 0
         '
         'ComandaidDataGridViewTextBoxColumn
@@ -716,10 +692,11 @@ Partial Class Administracio
         '
         'TabPage6
         '
-        Me.TabPage6.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage6.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage6.Size = New System.Drawing.Size(1324, 618)
+        Me.TabPage6.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TabPage6.Size = New System.Drawing.Size(976, 488)
         Me.TabPage6.TabIndex = 5
         Me.TabPage6.Text = "Logout"
         Me.TabPage6.UseVisualStyleBackColor = True
@@ -760,12 +737,12 @@ Partial Class Administracio
         '
         'Administracio
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1333, 647)
+        Me.ClientSize = New System.Drawing.Size(1000, 526)
         Me.Controls.Add(Me.TabControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimizeBox = False
         Me.Name = "Administracio"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
