@@ -16,7 +16,7 @@
         Me.LabelVersion.Text = String.Format("Versión {0}", My.Application.Info.Version.ToString)
         Me.LabelCopyright.Text = "Copyright (c) 2020 BitBit All Rights Reserved This product is protected by copyright and distributed under licenses restricting copying, distribution, and decompilation."
         Me.LabelCompanyName.Text = "BitBit "
-        Me.TextBoxDescription.Text = "Aplicació de benzinera self service desenvolupada per BitBit. Una manefra senzilla y cómoda de gestionar les teves gasolineres"
+        Me.TextBoxDescription.Text = "Aplicació de benzinera self service desenvolupada per BitBit. Una manefra senzilla y cómoda de gestionar les teves gasolineres."
     End Sub
 
     Private Sub OKButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OKButton.Click
