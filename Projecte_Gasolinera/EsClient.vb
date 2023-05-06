@@ -3,7 +3,7 @@ Imports System.Security.Cryptography
 Imports System.Text
 
 Public Class EsClient
-    Private conexion As String = "Data Source=DESKTOP-TPUG9J9\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
+    Private conexion As String = "Data Source=DESKTOP-4GK2TOH\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
     Dim varBBDDTypeOilReturn As String
     Dim emailorpassword As String
     Dim roundedEuros As Double
@@ -27,5 +27,9 @@ Public Class EsClient
                 Close()
             End If
         Next
+    End Sub
+
+    Private Sub EsClient_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

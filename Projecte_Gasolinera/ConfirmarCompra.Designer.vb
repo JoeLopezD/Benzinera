@@ -40,7 +40,7 @@ Partial Class ConfirmarCompra
         '
         'Timer1
         '
-        Me.Timer1.Interval = 5000
+        Me.Timer1.Interval = 3000
         '
         'ConfirmarCompra
         '
@@ -53,6 +53,7 @@ Partial Class ConfirmarCompra
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
         Me.Name = "ConfirmarCompra"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ConfirmarCompra"
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -225,7 +225,7 @@ Partial Class Gasolinera
         '
         Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
         Me.PictureBox11.Location = New System.Drawing.Point(0, 25)
-        Me.PictureBox11.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox11.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox11.Name = "PictureBox11"
         Me.PictureBox11.Size = New System.Drawing.Size(1055, 551)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage

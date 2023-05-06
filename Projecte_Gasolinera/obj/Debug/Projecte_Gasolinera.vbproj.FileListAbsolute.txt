@@ -59,3 +59,21 @@ C:\Users\Joel\Desktop\ProyectoVB\Projecte_Gasolinera\obj\Debug\Projecte_Gasoline
 C:\Users\Joel\Desktop\ProyectoVB\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.xml
 C:\Users\Joel\Desktop\ProyectoVB\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.pdb
 C:\Users\Anomalia\Documents\Visual Studio 2015\Projects\Projecte_Gasolinera2\Benzinera\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.AboutBox1.resources
+C:\Users\Joel\Desktop\ProyectoVB\Projecte_Gasolinera\bin\Debug\Projecte_Gasolinera.exe
+C:\Users\Joel\Desktop\ProyectoVB\Projecte_Gasolinera\bin\Debug\Projecte_Gasolinera.pdb
+C:\Users\Joel\Desktop\ProyectoVB\Projecte_Gasolinera\bin\Debug\Projecte_Gasolinera.xml
+C:\Users\Joel\Desktop\ProyectoVB\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.vbprojResolveAssemblyReference.cache
+C:\Users\Joel\Desktop\ProyectoVB\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.AboutBox1.resources
+C:\Users\Joel\Desktop\ProyectoVB\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Administracio.resources
+C:\Users\Joel\Desktop\ProyectoVB\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Administracio_Empreses.resources
+C:\Users\Joel\Desktop\ProyectoVB\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.ConfirmarCompra.resources
+C:\Users\Joel\Desktop\ProyectoVB\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.DetailOil.resources
+C:\Users\Joel\Desktop\ProyectoVB\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.EsClient.resources
+C:\Users\Joel\Desktop\ProyectoVB\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Form1.resources
+C:\Users\Joel\Desktop\ProyectoVB\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Form2.resources
+C:\Users\Joel\Desktop\ProyectoVB\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Gasolinera.resources
+C:\Users\Joel\Desktop\ProyectoVB\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Login.resources
+C:\Users\Joel\Desktop\ProyectoVB\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Resources.resources
+C:\Users\Joel\Desktop\ProyectoVB\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Pagament.resources
+C:\Users\Joel\Desktop\ProyectoVB\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.Registre_admin.resources
+C:\Users\Joel\Desktop\ProyectoVB\Projecte_Gasolinera\obj\Debug\Projecte_Gasolinera.vbproj.GenerateResource.Cache
