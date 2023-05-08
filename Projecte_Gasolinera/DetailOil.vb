@@ -46,6 +46,10 @@ Public Class DetailOil
         End If
     End Sub
 
+    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
+        Me.Close()
+    End Sub
+
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
         'Gasolinera.Show()
         'Close()
