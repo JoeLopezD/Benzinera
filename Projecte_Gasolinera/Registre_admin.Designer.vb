@@ -54,7 +54,7 @@ Partial Class Registre_admin
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(127, 184)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(186, 20)
         Me.TextBox1.TabIndex = 2
@@ -62,15 +62,16 @@ Partial Class Registre_admin
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(127, 254)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(186, 20)
         Me.TextBox2.TabIndex = 3
+        Me.TextBox2.UseSystemPasswordChar = True
         '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(183, 304)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(56, 19)
         Me.Button1.TabIndex = 4
@@ -100,7 +101,7 @@ Partial Class Registre_admin
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
         Me.Name = "Registre_admin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

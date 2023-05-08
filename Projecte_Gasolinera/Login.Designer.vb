@@ -49,6 +49,7 @@ Partial Class Login
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(218, 20)
         Me.TextBox2.TabIndex = 1
+        Me.TextBox2.UseSystemPasswordChar = True
         '
         'Label1
         '
