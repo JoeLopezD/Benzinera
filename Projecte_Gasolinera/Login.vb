@@ -2,7 +2,7 @@
 Imports System.Security.Cryptography
 Imports System.Text
 Public Class Login
-    Private conexion As String = "Data Source=DESKTOP-TPUG9J9\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
+    Private conexion As String = "Data Source=DESKTOP-4GK2TOH\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
     Dim varBBDD As String
     Dim emailorpassword As String
     Dim adminTrue As String

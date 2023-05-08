@@ -268,6 +268,7 @@ Partial Class Administracio_Empreses
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "Administracio_Empreses"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Administracio_Empreses"
         Me.ResumeLayout(False)
         Me.PerformLayout()

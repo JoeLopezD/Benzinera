@@ -4,7 +4,7 @@ Imports System.Text
 
 Public Class Gasolinera
 
-    Private conexion As String = "Data Source=DESKTOP-TPUG9J9\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
+    Private conexion As String = "Data Source=DESKTOP-4GK2TOH\SQLEXPRESS;Initial Catalog=carburant;Integrated Security=True"
     Dim varBBDDTypeOilReturn As String
     Dim emailorpassword As String
 
@@ -66,5 +66,4 @@ Public Class Gasolinera
     Private Sub InfoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InfoToolStripMenuItem.Click
         AboutBox1.Show()
     End Sub
-
 End Class
